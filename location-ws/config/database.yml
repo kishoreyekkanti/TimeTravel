@@ -1,0 +1,7 @@
+development:
+  path: ../db
+  filename: dev.db
+
+prduction:
+  path: ../db
+  filename: prod.db
