@@ -18,7 +18,7 @@ LONGITUDE_TO_KM_MAPPING_PER_DEGREE = {0 => 111.320,
   def self.radius(latitude, longitude, distance)
     km_lat = geo_to_km(latitude.to_i, LATITUDE_TO_KM_MAPPING_PER_DEGREE)
     km_long = geo_to_km(longitude.to_i, LONGITUDE_TO_KM_MAPPING_PER_DEGREE)
-    return distance/km_lat.to_f + latitude.to_f, distance/km_long.to_f + longitude.to_f
+    return (distance.to_f/km_lat)+ latitude.to_f, (distance.to_f/km_long) + longitude.to_f
   end
 
   private
@@ -26,11 +26,11 @@ LONGITUDE_TO_KM_MAPPING_PER_DEGREE = {0 => 111.320,
   def self.geo_to_km(geo, geo_mapping)
     case geo
       when 0..14 then geo_mapping[0]
-      when 15..30 then geo_mapping[15]
-      when 30..45 then geo_mapping[30]
-      when 45..60 then geo_mapping[45]
-      when 60..75 then geo_mapping[60]
-      when 75..90 then geo_mapping[75]
+      when 15..29 then geo_mapping[15]
+      when 30..44 then geo_mapping[30]
+      when 45..59 then geo_mapping[45]
+      when 60..74 then geo_mapping[60]
+      when 75..89 then geo_mapping[75]
       when 90..100 then geo_mapping[90]
     end
   end

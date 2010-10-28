@@ -29,10 +29,12 @@ get '/location/index' do
   distance = params[:distance]
   staleness = params[:staleness] || 2
   max_latitude, max_longitude = Converter.radius(latitude, longitude, distance ||2)
-  locations = Location.all(:conditions => {:created_at => Time.now..staleness.days.ago,
-                               :latitude => latitude.to_f..max_latitude,
-                               :longitude => longitude.to_f..max_longitude })
-  p locations.inspect
+  locations = Location.all(:conditions => {:created_at => staleness.days.ago..Time.now,
+                                           :latitude.gte => latitude.to_f,
+                                           :latitude.lte => max_latitude,
+                                           :longitude.gte => longitude.to_f,
+                                           :longitude.lte => max_longitude})
+   p locations.inspect
 end
 
 post  '/location/create' do
