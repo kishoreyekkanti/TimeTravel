@@ -1,0 +1,4 @@
+sinatra
+datamapper
+active_support
+sqlite3-ruby --version 1.3.0

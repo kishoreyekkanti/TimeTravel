@@ -16,7 +16,6 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.ImageView;
 
 public class PhotoCaptureActivity extends Activity {
 	/** Called when the activity is first created. */
@@ -29,20 +28,19 @@ public class PhotoCaptureActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.photo_capture);
-		ImageView cameraButton = (ImageView) findViewById(R.id.camera_click);
-		cameraButton.setOnClickListener(new OnClickListener() {
+		Log.i("PhotoCaptureActivity", "Initializing the camera surface now");
+		preview = (SurfaceView) findViewById(R.id.camera_preview);
+		preview.setOnClickListener(new OnClickListener(){
 			public void onClick(View v) {
 				takePicture();
 			}
-
 		});
-		Log.i("NewReviewActivity", "Initializing the camera surface now");
-		preview = (SurfaceView) findViewById(R.id.camera_preview);
 		previewHolder = preview.getHolder();
 		previewHolder.addCallback(surfaceCallback);
 		previewHolder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
+		
 	}
-
+    
 	private void takePicture() {
 		camera.takePicture(null, null, photoCallBack);
 	}

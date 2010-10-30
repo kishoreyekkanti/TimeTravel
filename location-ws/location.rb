@@ -5,6 +5,7 @@ require 'dm-timestamps'
 require 'dm-migrations'
 require 'utils'
 require 'active_support'
+dir = __FILE__
 DataMapper::setup(:default,"sqlite3://#{Dir.pwd}/location.db")
 
 class Location
@@ -44,5 +45,5 @@ post  '/location/create' do
   location.url = params[:url]
   location.description = params[:description]
   location.created_at = Time.now
-  location.save
+  location.save!
 end

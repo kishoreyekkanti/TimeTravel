@@ -5,11 +5,7 @@
     android:layout_height="fill_parent"
     android:gravity="center_vertical"
     >
-	<ImageButton android:id="@+id/camera_click"
-				 android:layout_width="wrap_content"
-				 android:layout_height="wrap_content"
-				 android:src="@drawable/camera"
-	/>
+
 	<android.view.SurfaceView
 				android:id="@+id/camera_preview"
 				android:layout_above="@+id/camera_click"

@@ -61,7 +61,7 @@ public class TwitpicUpload {
 			if (tpResponse != null) {
 				tpResponse.dumpVars();
 				Log.d("Twitpic response", tpResponse.getMediaUrl());
-				return tpResponse.getMediaAid();
+				return tpResponse.getMediaUrl();
 			}
 		}
 		return null;
