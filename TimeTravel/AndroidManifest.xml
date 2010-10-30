@@ -15,7 +15,12 @@
 		<activity android:name="com.travel.activities.UploadDetailsActivity"
 			android:label="upload_details" android:theme="@android:style/Theme.NoTitleBar">
 		</activity>
-
+		<activity android:name=".UserPreferenceActivity" android:label="User Preferences" 
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity android:name=".ImageViewActivity"	android:label="ImageView" 
+			android:theme="@android:style/Theme.NoTitleBar">
+		</activity>		
 	</application>
 	<uses-feature android:name="android.hardware.camera" />
 	<uses-permission android:name="android.permission.CAMERA" />

@@ -39,11 +39,11 @@ public class UploadDetailsActivity extends Activity{
 		setContentView(R.layout.upload_details);
 		twitPicUpload = new TwitpicUpload(this);
 		description = (EditText)findViewById(R.id.description);
-		Button done = (Button)findViewById(R.id.photo_upload);
+		Button upload = (Button)findViewById(R.id.photo_upload);
 		
         locationManager = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 60000, 1000, new MyLocationListener());
-		done.setOnClickListener(new OnClickListener() {
+		upload.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 		Log.d("Upload Details Activity","triggering the upload");		
 			triggerUpload();

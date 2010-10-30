@@ -3,12 +3,14 @@ package com.travel.activities;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.List;
 
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.PixelFormat;
 import android.hardware.Camera;
+import android.hardware.Camera.Size;
 import android.os.Bundle;
 import android.text.format.Time;
 import android.util.Log;
@@ -63,11 +65,50 @@ public class PhotoCaptureActivity extends Activity {
 		}
 	};
 
-	SurfaceHolder.Callback surfaceCallback = new SurfaceHolder.Callback() {
+
+    private Size getOptimalPreviewSize(List<Size> sizes, int w, int h) {
+        final double ASPECT_TOLERANCE = 0.05;
+        double targetRatio = (double) w / h;
+        if (sizes == null) return null;
+
+        Size optimalSize = null;
+        double minDiff = Double.MAX_VALUE;
+
+        int targetHeight = h;
+
+        // Try to find an size match aspect ratio and size
+        for (Size size : sizes) {
+            double ratio = (double) size.width / size.height;
+            if (Math.abs(ratio - targetRatio) > ASPECT_TOLERANCE) continue;
+            if (Math.abs(size.height - targetHeight) < minDiff) {
+                optimalSize = size;
+                minDiff = Math.abs(size.height - targetHeight);
+            }
+        }
+
+        // Cannot find the one match the aspect ratio, ignore the requirement
+        if (optimalSize == null) {
+            minDiff = Double.MAX_VALUE;
+            for (Size size : sizes) {
+                if (Math.abs(size.height - targetHeight) < minDiff) {
+                    optimalSize = size;
+                    minDiff = Math.abs(size.height - targetHeight);
+                }
+            }
+        }
+        return optimalSize;
+    }
+	
+ SurfaceHolder.Callback surfaceCallback = new SurfaceHolder.Callback() {
 
 		public void surfaceChanged(SurfaceHolder holder, int format, int width,
 				int height) {
 			Camera.Parameters parameters = camera.getParameters();
+
+	        List<Size> sizes = parameters.getSupportedPreviewSizes();
+	        Size optimalSize = getOptimalPreviewSize(sizes, width, height);
+	        parameters.setPreviewSize(optimalSize.width, optimalSize.height);
+			
 			parameters.setPictureFormat(PixelFormat.JPEG);
 			camera.setParameters(parameters);
 			camera.startPreview();
