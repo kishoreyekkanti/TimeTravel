@@ -19,6 +19,7 @@ import org.json.JSONObject;
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.location.Location;
@@ -29,14 +30,20 @@ import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Gallery;
 import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.AdapterView.OnItemClickListener;
 
 public class ImageViewActivity extends Activity {
 	LocationManager locationManager;
 	Location location;
 	SharedPreferences preferences;
+	String[] remoteImageURLs;
+	private static final String JPG = ".jpg";
+	private static final String TWITPIC_BASE_URL = "http://twitpic.com/show/thumb/";
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -57,11 +64,45 @@ public class ImageViewActivity extends Activity {
 		 * Find the gallery defined in the main.xml Apply a new (custom)
 		 * ImageAdapter to it.
 		 */
-		((Gallery) findViewById(R.id.gallery))
-				.setAdapter(new ImageAdapter(this));
+		Gallery gallery = (Gallery)findViewById(R.id.gallery);
+		final JSONArray jsonArray = getJson();
+		remoteImageURLs = extractRemoteImageURLs(jsonArray);
+        setImageDescription(jsonArray,0);
+        setGeoLocation(jsonArray,0);
+		gallery.setAdapter(new ImageAdapter(this,remoteImageURLs));
+		gallery.setOnItemClickListener(new OnItemClickListener() 
+        {
+            public void onItemClick(AdapterView parent, 
+            View v, int position, long id) 
+            {
+            	setImageDescription(jsonArray,position);
+            	setGeoLocation(jsonArray, position);
+            }
+        });		
 
 	}
 
+	private void setImageDescription(JSONArray jsonArray,int index) {
+		TextView textView = (TextView)findViewById(R.id.image_description);
+        try {
+			textView.setText(jsonArray.getJSONObject(index).getString("description"));
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	private void setGeoLocation(JSONArray jsonArray,int index) {
+		TextView textView = (TextView)findViewById(R.id.geo_location);
+        try {
+			textView.setText("Latitude:"+jsonArray.getJSONObject(index).getDouble("latitude")+"\n"+
+							 "Longitude:"+jsonArray.getJSONObject(index).getDouble("longitude"));
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
 	private JSONArray getJson() {
 		JSONArray jArray = null;
 		try {
@@ -91,11 +132,7 @@ public class ImageViewActivity extends Activity {
 						.getDouble("longitude")));
 				Log.d("description", jsonData.getString("description"));
 			}
-			// JSONObject jsonString = new
-			// JSONObject(finalJsonString.toString());
-			// Log.d("ImageViewActivity", "JSONObject :"+ jsonString);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
@@ -145,18 +182,34 @@ public class ImageViewActivity extends Activity {
 
 	}
 
+	private String[] extractRemoteImageURLs(JSONArray jArray) {
+		String[] remoteUrls = new String[jArray.length()];
+		try {
+			for (int i = 0; i < jArray.length(); i++) {
+				JSONObject jsonData = jArray.getJSONObject(i);
+				remoteUrls[i] = TWITPIC_BASE_URL+jsonData.getString("url")+JPG;
+			}
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
+		return remoteUrls;
+	}	
+	
 	public class ImageAdapter extends BaseAdapter {
 		/** The parent context */
-		private Context myContext;
+		private Context context;
+		private int itemBackground;
 
 		/** URL-Strings to some remote images. */
 		private String[] myRemoteImages;
 
 		/** Simple Constructor saving the 'parent' context. */
-		public ImageAdapter(Context c) {
-			this.myContext = c;
-			JSONArray jsonArray = getJson();
-			myRemoteImages = extractRemoteImageURLs(jsonArray);
+		public ImageAdapter(Context c,String[] remoteImageURLs) {
+			this.context = c;
+			myRemoteImages = remoteImageURLs;
+			TypedArray a = obtainStyledAttributes(R.styleable.Gallery1);
+            itemBackground = a.getResourceId(R.styleable.Gallery1_android_galleryItemBackground, 0);
+            a.recycle(); 
 		}
 
 		/** Returns the amount of images we have defined. */
@@ -178,11 +231,11 @@ public class ImageViewActivity extends Activity {
 		 * passed.
 		 */
 		public View getView(int position, View convertView, ViewGroup parent) {
-			ImageView i = new ImageView(this.myContext);
+			ImageView imageView = new ImageView(this.context);
 
 			try {
 				/* Open a new URL and get the InputStream to load data from it. */
-
+				Log.d("ImageActivity","for the image "+myRemoteImages[position]);
 				URL aURL = new URL(myRemoteImages[position]);
 				URLConnection conn = aURL.openConnection();
 				conn.connect();
@@ -194,17 +247,18 @@ public class ImageViewActivity extends Activity {
 				bis.close();
 				is.close();
 				/* Apply the Bitmap to the ImageView that will be returned. */
-				i.setImageBitmap(bm);
+				imageView.setImageBitmap(bm);
 			} catch (IOException e) {
 				// i.setImageResource(R.drawable.error);
 				Log.e("DEBUGTAG", "Remtoe Image Exception", e);
 			}
 
 			/* Image should be scaled as width/height are set. */
-			i.setScaleType(ImageView.ScaleType.FIT_CENTER);
+			imageView.setScaleType(ImageView.ScaleType.FIT_XY);
 			/* Set the Width/Height of the ImageView. */
-			i.setLayoutParams(new Gallery.LayoutParams(150, 150));
-			return i;
+			imageView.setLayoutParams(new Gallery.LayoutParams(250, 220));
+			imageView.setBackgroundResource(itemBackground);
+			return imageView;
 		}
 
 		/**
@@ -216,18 +270,6 @@ public class ImageViewActivity extends Activity {
 			return Math.max(0, 1.0f / (float) Math.pow(2, Math.abs(offset)));
 		}
 
-		private String[] extractRemoteImageURLs(JSONArray jArray) {
-			String[] remoteUrls = new String[jArray.length()];
-			try {
-				for (int i = 0; i < jArray.length(); i++) {
-					JSONObject jsonData = jArray.getJSONObject(i);
-					remoteUrls[i] = "http://twitpic.com/show/thumb/"+jsonData.getString("url")+".jpg";
-				}
-			} catch (JSONException e) {
-				e.printStackTrace();
-			}
-			return remoteUrls;
-		}
 	}
 
 }
