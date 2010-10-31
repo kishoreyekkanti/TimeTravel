@@ -9,8 +9,6 @@ import android.util.Log;
 
 import com.harrison.lee.twitpic4j.TwitPic;
 import com.harrison.lee.twitpic4j.TwitPicResponse;
-import com.harrison.lee.twitpic4j.exception.TwitPicException;
-import com.travel.activities.R;
 
 public class TwitpicUpload {
 
@@ -61,7 +59,7 @@ public class TwitpicUpload {
 			if (tpResponse != null) {
 				tpResponse.dumpVars();
 				Log.d("Twitpic response", tpResponse.getMediaUrl());
-				return tpResponse.getMediaUrl();
+				return tpResponse.getMediaAid();
 			}
 		}
 		return null;
