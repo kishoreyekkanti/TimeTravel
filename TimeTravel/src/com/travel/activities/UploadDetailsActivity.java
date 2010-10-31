@@ -14,6 +14,7 @@ import org.apache.http.protocol.HTTP;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
@@ -45,17 +46,21 @@ public class UploadDetailsActivity extends Activity{
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 60000, 1000, new MyLocationListener());
 		upload.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
-		Log.d("Upload Details Activity","triggering the upload");		
-			triggerUpload();
-			UploadDetailsActivity.this.finish();	
+				Log.d("Upload Details Activity", "triggering the upload");
+				new Thread(new Runnable() {
+					public void run() {
+						//Intent capturePhoto = new Intent(UploadDetailsActivity.this,PhotoCaptureActivity.class);
+						//startActivity(capturePhoto);
+						triggerUpload();
+					}
+				}).start();
+				UploadDetailsActivity.this.finish();
 			}
 		});
 	}
 	
 	private void triggerUpload(){
 		Log.i("UploadDetailsActivity","Uploading the photo!");
-//		new Thread(new Runnable(){
-//			public void run(){
 			try {
 				String twitpic_url = twitPicUpload.uploadImageFor(imagePath, description.getText().toString());
 				Location location = getCurrentLocation();
@@ -84,7 +89,6 @@ public class UploadDetailsActivity extends Activity{
 				e.printStackTrace();
 				Log.e("UploadDetailsActivity",e.toString());
 			}
-//		}});
 	}
 
 	private Location getCurrentLocation(){
