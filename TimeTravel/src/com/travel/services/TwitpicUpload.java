@@ -15,19 +15,13 @@ public class TwitpicUpload {
 	private String username;
 	private String password;
 	private boolean includeTweet = false;
-	private Context context;
-
-	private static int INVALID_CREDENTIALS_NOTIFICATION = 666;
 
 	public TwitpicUpload(Context context) {
 		SharedPreferences preferences = PreferenceManager
 				.getDefaultSharedPreferences(context);
-		this.username = "testtimetravel";// preferences.getString("twitter_username",
-											// "");
-		this.password = "!abcd1234";// preferences.getString("twitter_password",
-									// "");
+		this.username = preferences.getString("twitter_username", "");
+		this.password =  preferences.getString("twitter_password","");
 		this.includeTweet = preferences.getBoolean("tweet_always", false);
-		this.context = context;
 	}
 
 	public String uploadImageFor(String filePath, String tweetMessage)

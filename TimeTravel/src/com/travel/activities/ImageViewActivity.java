@@ -64,21 +64,19 @@ public class ImageViewActivity extends Activity {
 		 * Find the gallery defined in the main.xml Apply a new (custom)
 		 * ImageAdapter to it.
 		 */
-		Gallery gallery = (Gallery)findViewById(R.id.gallery);
+		Gallery gallery = (Gallery) findViewById(R.id.gallery);
 		final JSONArray jsonArray = getJson();
 		remoteImageURLs = extractRemoteImageURLs(jsonArray);
-        setImageDescription(jsonArray,0);
-        setGeoLocation(jsonArray,0);
-		gallery.setAdapter(new ImageAdapter(this,remoteImageURLs));
-		gallery.setOnItemClickListener(new OnItemClickListener() 
-        {
-            public void onItemClick(AdapterView parent, 
-            View v, int position, long id) 
-            {
-            	setImageDescription(jsonArray,position);
-            	setGeoLocation(jsonArray, position);
-            }
-        });		
+		setImageDescription(jsonArray, 0);
+		setGeoLocation(jsonArray, 0);
+		gallery.setAdapter(new ImageAdapter(this, remoteImageURLs));
+		gallery.setOnItemClickListener(new OnItemClickListener() {
+			public void onItemClick(AdapterView parent, View v, int position,
+					long id) {
+				setImageDescription(jsonArray, position);
+				setGeoLocation(jsonArray, position);
+			}
+		});
 
 	}
 

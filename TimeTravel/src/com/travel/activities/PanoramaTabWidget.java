@@ -3,7 +3,6 @@ package com.travel.activities;
 import android.app.TabActivity;
 import android.content.Intent;
 import android.content.res.Resources;
-import android.location.LocationManager;
 import android.os.Bundle;
 import android.widget.TabHost;
 
@@ -21,15 +20,15 @@ public void onCreate(Bundle savedInstanceState) {
     // Create an Intent to launch an Activity for the tab (to be reused)
     intent = new Intent().setClass(this, PhotoCaptureActivity.class);
     // Initialize a TabSpec for each tab and add it to the TabHost
-    spec = tabHost.newTabSpec("photo").setIndicator("",res.getDrawable(R.drawable.camera)).setContent(intent);
+    spec = tabHost.newTabSpec("photo").setIndicator("",res.getDrawable(R.drawable.camera_64)).setContent(intent);
     tabHost.addTab(spec);
 
     intent = new Intent().setClass(this, ImageViewActivity.class);
-    spec = tabHost.newTabSpec("imageView").setIndicator("",res.getDrawable(R.drawable.icon)).setContent(intent);
+    spec = tabHost.newTabSpec("imageView").setIndicator("",res.getDrawable(R.drawable.gallery_64)).setContent(intent);
     tabHost.addTab(spec);
     
     intent = new Intent().setClass(this, UserPreferenceActivity.class);
-    spec = tabHost.newTabSpec("preferences").setIndicator("",res.getDrawable(R.drawable.icon)).setContent(intent);
+    spec = tabHost.newTabSpec("preferences").setIndicator("",res.getDrawable(R.drawable.settings_64)).setContent(intent);
     tabHost.addTab(spec);
     
     tabHost.setCurrentTab(0);
