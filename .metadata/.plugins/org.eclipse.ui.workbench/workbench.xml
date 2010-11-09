@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="13" version="2.0">
+<workbenchAdvisor/>
+<window height="768" maximized="true" width="1024" x="0" y="24">
+<fastViewData fastViewLocation="1024"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout locked="0">
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="100" y="34"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="adt.actionSet.avdManager" itemType="typeToolBarContribution" x="44" y="34"/>
+<coolItem id="adt.actionSet.wizards" itemType="typeToolBarContribution" x="92" y="34"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="116" y="34"/>
+<coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="100" y="34"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="34"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="116" y="34"/>
+<coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="122" y="34"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="172" y="34"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page aggregateWorkingSetId="Aggregate for window 1287908442185" focus="true" label="Workspace - Java">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" partName="TimeTravelTest Manifest" path="/home/ykkuumar/android-stuff/TimeTravel/TimeTravelTest/AndroidManifest.xml" title="TimeTravelTest Manifest" tooltip="TimeTravelTest/AndroidManifest.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TimeTravelTest/AndroidManifest.xml"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UploadDetailsActivityTest.java" partName="UploadDetailsActivityTest.java" path="/home/ykkuumar/android-stuff/TimeTravel/TimeTravelTest/src/com/travel/activities/test/UploadDetailsActivityTest.java" title="UploadDetailsActivityTest.java" tooltip="TimeTravelTest/src/com/travel/activities/test/UploadDetailsActivityTest.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TimeTravelTest/src/com/travel/activities/test/UploadDetailsActivityTest.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+</editors>
+<views>
+<view id="org.eclipse.jdt.junit.ResultView" partName="JUnit">
+<viewState failuresOnly="false" layout="1" orientation="2" ratio="500" scroll="false" time="true"/>
+</view>
+<view id="com.android.ide.eclipse.ddms.views.LogCatView" partName="LogCat">
+<viewState/>
+</view>
+<view id="org.eclipse.jdt.ui.TypeHierarchy" partName="Hierarchy"/>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Errors"/>
+</expanded>
+<columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
+<viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="Aggregate for window 1287908442185">
+<customFilters userDefinedPatternsEnabled="false">
+<xmlDefinedFilters>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.LocalTypesFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.StaticsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.pde.ui.ExternalPluginLibrariesFilter1" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.ClosedProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonSharedProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonJavaElementFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.ContainedLibraryFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.CuAndClassFileFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonJavaProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.EmptyInnerPackageFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.PackageDeclarationFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.EmptyPackageFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.ImportDeclarationFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.FieldsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.HideInnerClassFilesFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonPublicFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer_patternFilterId_.*" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.EmptyLibraryContainerFilter" isEnabled="true"/>
+<child filterId="org.eclipse.pde.ui.BinaryProjectFilter1" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.SyntheticMembersFilter" isEnabled="true"/>
+</xmlDefinedFilters>
+</customFilters>
+</viewState>
+</view>
+<view id="com.android.ide.eclipse.ddms.views.EmulatorControlView" partName="Emulator Control">
+<viewState/>
+</view>
+<view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
+<view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc">
+<viewState/>
+</view>
+</views>
+<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="adt.actionSet.wizards"/>
+<alwaysOnActionSet id="adt.actionSet.refactorings"/>
+<alwaysOnActionSet id="adt.actionSet.avdManager"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaElementCreationActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.debug.ui.JDTDebugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.junit.JUnitActionSet"/>
+<show_view_action id="org.eclipse.jdt.ui.PackageExplorer"/>
+<show_view_action id="org.eclipse.jdt.ui.TypeHierarchy"/>
+<show_view_action id="org.eclipse.jdt.ui.SourceView"/>
+<show_view_action id="org.eclipse.jdt.ui.JavadocView"/>
+<show_view_action id="org.eclipse.search.ui.views.SearchView"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.ui.views.ProgressView"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<show_view_action id="org.eclipse.ui.texteditor.TemplatesView"/>
+<show_view_action id="org.eclipse.ant.ui.views.AntView"/>
+<show_view_action id="org.eclipse.pde.runtime.LogView"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewPackageCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewClassCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewInterfaceCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewEnumCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewAnnotationCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewSourceFolderCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewSnippetFileCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewJavaWorkingSetWizard"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
+<new_wizard_action id="org.eclipse.ui.editors.wizards.UntitledTextFileWizard"/>
+<new_wizard_action id="com.android.ide.eclipse.adt.project.NewProjectWizard"/>
+<new_wizard_action id="com.android.ide.eclipse.editors.wizards.NewXmlFileWizard"/>
+<new_wizard_action id="org.eclipse.jdt.junit.wizards.NewTestCaseCreationWizard"/>
+<perspective_action id="com.android.ide.eclipse.ddms.Perspective"/>
+<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaBrowsingPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.jdt.ui.PackageExplorer"/>
+<view id="org.eclipse.jdt.ui.TypeHierarchy"/>
+<view id="org.eclipse.jdt.junit.ResultView"/>
+<view id="com.android.ide.eclipse.ddms.views.EmulatorControlView"/>
+<view id="com.android.ide.eclipse.ddms.views.LogCatView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<fastViewBars>
+<fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="org.eclipse.jdt.ui.JavadocView" style="0">
+<fastViews>
+<view id="org.eclipse.ui.views.ProblemView" ratio="0.3"/>
+<view id="org.eclipse.jdt.ui.JavadocView" ratio="0.3"/>
+<view id="org.eclipse.jdt.ui.SourceView" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
+<layout>
+<mainWindow>
+<info folder="true" part="left">
+<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
+<page content="org.eclipse.jdt.ui.TypeHierarchy" label="Hierarchy"/>
+<page content="org.eclipse.jdt.junit.ResultView" label="JUnit"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@126c5a5" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="left">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.24950495" ratioLeft="252" ratioRight="758" relationship="2" relative="left"/>
+<info folder="true" part="bottom" ratio="0.5508475" ratioLeft="390" ratioRight="318" relationship="4" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.JavadocView" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.SourceView" label="LabelNotFound"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="right" ratio="0.74934036" ratioLeft="568" ratioRight="190" relationship="2" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<page content="org.eclipse.ui.texteditor.TemplatesView" label="LabelNotFound"/>
+<page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@260961" ratio="0.5819209" ratioLeft="412" ratioRight="296" relationship="4" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@fc511a" ratio="0.55649716" ratioLeft="394" ratioRight="314" relationship="4" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@134d87e" ratio="0.53954804" ratioLeft="382" ratioRight="326" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="com.android.ide.eclipse.ddms.views.LogCatView" appearance="2" expanded="2">
+<page content="com.android.ide.eclipse.ddms.views.EmulatorControlView" label="Emulator Control"/>
+<page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LogCat"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TimeTravel/src/com/travel/activities/PanoramaTabWidget.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TimeTravelTest/src/com/travel/activities/test/PanoramaTabWidgetTest.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TimeTravel/src/com/travel/activities/PhotoCaptureActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/TimeTravel/res/layout/photo_capture.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TimeTravel/src/com/travel/activities/UploadDetailsActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TimeTravel/src/com/travel/services/TwitpicUpload.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TimeTravelTest/src/com/travel/activities/test/UploadDetailsActivityTest.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TrackMeTest/src/com/track/mylocation/test/MyLocationTest.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/TimeTravelTest/AndroidManifest.xml"/>
+</editors>
+<item historyLabel="PanoramaTabWidgetTest.java" index="1">
+<position info="not_deleted" x="508" y="0"/>
+</item>
+<item historyLabel="PanoramaTabWidgetTest.java" index="1">
+<position info="not_deleted" x="1007" y="0"/>
+</item>
+<item historyLabel="PanoramaTabWidget.java" index="0">
+<position info="not_deleted" x="563" y="0"/>
+</item>
+<item historyLabel="PanoramaTabWidgetTest.java" index="1">
+<position info="not_deleted" x="420" y="0"/>
+</item>
+<item historyLabel="PanoramaTabWidget.java" index="0">
+<position info="not_deleted" x="759" y="0"/>
+</item>
+<item historyLabel="PanoramaTabWidgetTest.java" index="1">
+<position/>
+</item>
+<item historyLabel="PanoramaTabWidget.java" index="0">
+<position info="not_deleted" x="759" y="0"/>
+</item>
+<item historyLabel="PanoramaTabWidgetTest.java" index="1">
+<position info="not_deleted" x="639" y="0"/>
+</item>
+<item historyLabel="PanoramaTabWidgetTest.java" index="1">
+<position/>
+</item>
+<item historyLabel="PanoramaTabWidgetTest.java" index="1">
+<position/>
+</item>
+<item historyLabel="PanoramaTabWidgetTest.java" index="1">
+<position info="not_deleted" x="717" y="0"/>
+</item>
+<item historyLabel="PanoramaTabWidget.java" index="0">
+<position info="not_deleted" x="759" y="0"/>
+</item>
+<item historyLabel="PhotoCaptureActivity.java" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="PanoramaTabWidgetTest.java" index="1">
+<position info="not_deleted" x="1007" y="0"/>
+</item>
+<item historyLabel="PanoramaTabWidget.java" index="0">
+<position info="not_deleted" x="759" y="0"/>
+</item>
+<item historyLabel="PhotoCaptureActivity.java" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="PanoramaTabWidgetTest.java" index="1">
+<position info="not_deleted" x="1007" y="0"/>
+</item>
+<item historyLabel="PanoramaTabWidgetTest.java" index="1">
+<position info="not_deleted" x="773" y="0"/>
+</item>
+<item historyLabel="PanoramaTabWidgetTest.java" index="1">
+<position info="not_deleted" x="771" y="0"/>
+</item>
+<item historyLabel="photo_capture.xml" index="3"/>
+<item historyLabel="PanoramaTabWidgetTest.java" index="1">
+<position info="not_deleted" x="739" y="0"/>
+</item>
+<item historyLabel="PanoramaTabWidget.java" index="0">
+<position info="not_deleted" x="1074" y="0"/>
+</item>
+<item historyLabel="PanoramaTabWidgetTest.java" index="1">
+<position info="not_deleted" x="705" y="0"/>
+</item>
+<item historyLabel="UploadDetailsActivity.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="TwitpicUpload.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="UploadDetailsActivity.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="UploadDetailsActivityTest.java" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="TwitpicUpload.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="UploadDetailsActivity.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="PanoramaTabWidgetTest.java" index="1">
+<position info="not_deleted" x="201" y="59"/>
+</item>
+<item historyLabel="UploadDetailsActivityTest.java" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="UploadDetailsActivityTest.java" index="6">
+<position info="not_deleted" x="391" y="0"/>
+</item>
+<item historyLabel="UploadDetailsActivityTest.java" index="6">
+<position info="not_deleted" x="475" y="0"/>
+</item>
+<item historyLabel="UploadDetailsActivityTest.java" index="6">
+<position info="not_deleted" x="514" y="0"/>
+</item>
+<item historyLabel="UploadDetailsActivity.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="UploadDetailsActivityTest.java" index="6">
+<position info="not_deleted" x="617" y="0"/>
+</item>
+<item historyLabel="UploadDetailsActivity.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="UploadDetailsActivityTest.java" index="6">
+<position info="not_deleted" x="617" y="0"/>
+</item>
+<item historyLabel="UploadDetailsActivityTest.java" index="6">
+<position/>
+</item>
+<item historyLabel="MyLocationTest.java" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="UploadDetailsActivityTest.java" index="6">
+<position info="not_deleted" x="290" y="0"/>
+</item>
+<item historyLabel="TwitpicUpload.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="UploadDetailsActivityTest.java" index="6">
+<position info="not_deleted" x="290" y="0"/>
+</item>
+<item historyLabel="TwitpicUpload.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="UploadDetailsActivity.java" index="4">
+<position info="not_deleted" x="2638" y="0"/>
+</item>
+<item historyLabel="UploadDetailsActivityTest.java" index="6">
+<position info="not_deleted" x="290" y="0"/>
+</item>
+<item historyLabel="UploadDetailsActivity.java" index="4">
+<position info="not_deleted" x="2638" y="0"/>
+</item>
+<item historyLabel="UploadDetailsActivityTest.java" index="6">
+<position info="not_deleted" x="612" y="0"/>
+</item>
+<item historyLabel="TimeTravelTest Manifest" index="8"/>
+<item active="true" historyLabel="UploadDetailsActivityTest.java" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="left"/>
+</trimArea>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="bottom"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@134d87e"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UploadDetailsActivityTest.java" tooltip="TimeTravelTest/src/com/travel/activities/test/UploadDetailsActivityTest.java">
+<persistable path="/TimeTravelTest/src/com/travel/activities/test/UploadDetailsActivityTest.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="TimeTravelTest/AndroidManifest.xml">
+<persistable path="/TimeTravelTest/AndroidManifest.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MyLocationTest.java" tooltip="TrackMeTest/src/com/track/mylocation/test/MyLocationTest.java">
+<persistable path="/TrackMeTest/src/com/track/mylocation/test/MyLocationTest.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TwitpicUpload.java" tooltip="TimeTravel/src/com/travel/services/TwitpicUpload.java">
+<persistable path="/TimeTravel/src/com/travel/services/TwitpicUpload.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UploadDetailsActivity.java" tooltip="TimeTravel/src/com/travel/activities/UploadDetailsActivity.java">
+<persistable path="/TimeTravel/src/com/travel/activities/UploadDetailsActivity.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="photo_capture.xml" tooltip="TimeTravel/res/layout/photo_capture.xml">
+<persistable path="/TimeTravel/res/layout/photo_capture.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PhotoCaptureActivity.java" tooltip="TimeTravel/src/com/travel/activities/PhotoCaptureActivity.java">
+<persistable path="/TimeTravel/src/com/travel/activities/PhotoCaptureActivity.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PanoramaTabWidgetTest.java" tooltip="TimeTravelTest/src/com/travel/activities/test/PanoramaTabWidgetTest.java">
+<persistable path="/TimeTravelTest/src/com/travel/activities/test/PanoramaTabWidgetTest.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PanoramaTabWidget.java" tooltip="TimeTravel/src/com/travel/activities/PanoramaTabWidget.java">
+<persistable path="/TimeTravel/src/com/travel/activities/PanoramaTabWidget.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PhotoCaptureActivityTest.java" tooltip="TimeTravelTest/src/com/travel/activities/test/PhotoCaptureActivityTest.java">
+<persistable path="/TimeTravelTest/src/com/travel/activities/test/PhotoCaptureActivityTest.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="TrackMeTest/AndroidManifest.xml">
+<persistable path="/TrackMeTest/AndroidManifest.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="TrackMe/AndroidManifest.xml">
+<persistable path="/TrackMe/AndroidManifest.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="NotePadTest/AndroidManifest.xml">
+<persistable path="/NotePadTest/AndroidManifest.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NotePadTest.java" tooltip="NotePadTest/src/com/jayway/test/NotePadTest.java">
+<persistable path="/NotePadTest/src/com/jayway/test/NotePadTest.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UserPreferenceActivity.java" tooltip="TimeTravel/src/com/travel/activities/UserPreferenceActivity.java">
+<persistable path="/TimeTravel/src/com/travel/activities/UserPreferenceActivity.java"/>
+</file>
+</mruList>
+</workbench>

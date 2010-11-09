@@ -1,0 +1,7 @@
+package com.travel.activities.test;
+
+import android.test.ActivityInstrumentationTestCase2;
+
+public class PhotoCaptureActivityTest extends ActivityInstrumentationTestCase2<PhotoCaptureActivity>{
+
+}

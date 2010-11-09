@@ -1,0 +1,9 @@
+package com.travel.activities;
+
+import android.preference.PreferenceActivity;
+
+public class UserPreferenceActivity extends PreferenceActivity{
+	
+	
+
+}

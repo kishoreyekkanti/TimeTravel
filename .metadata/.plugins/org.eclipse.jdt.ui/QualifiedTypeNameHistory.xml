@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="android.hardware.Camera"/>
+<fullyQualifiedTypeName name="android.hardware.Camera.PictureCallback"/>
+<fullyQualifiedTypeName name="android.view.SurfaceHolder.Callback"/>
+<fullyQualifiedTypeName name="android.hardware.Camera.Parameters"/>
+<fullyQualifiedTypeName name="android.graphics.PixelFormat"/>
+<fullyQualifiedTypeName name="android.widget.EditText"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="android.text.format.Time"/>
+<fullyQualifiedTypeName name="android.app.Service"/>
+<fullyQualifiedTypeName name="com.travel.activities.R"/>
+<fullyQualifiedTypeName name="com.travel.services.TwitpicUpload"/>
+<fullyQualifiedTypeName name="android.preference.PreferenceScreen"/>
+<fullyQualifiedTypeName name="android.R"/>
+<fullyQualifiedTypeName name="android.R.layout"/>
+<fullyQualifiedTypeName name="android.R.xml"/>
+<fullyQualifiedTypeName name="com.travel.activities.R.xml"/>
+<fullyQualifiedTypeName name="com.travel.activities.UserPreferenceActivity"/>
+<fullyQualifiedTypeName name="com.travel.activities.R.drawable"/>
+<fullyQualifiedTypeName name="com.travel.activities.R.layout"/>
+<fullyQualifiedTypeName name="com.travel.activities.R.string"/>
+<fullyQualifiedTypeName name="com.travel.activities.ImageViewActivity"/>
+<fullyQualifiedTypeName name="com.travel.activities.test.PhotoCaptureActivityTest"/>
+<fullyQualifiedTypeName name="com.travel.activities.PhotoCaptureActivity"/>
+<fullyQualifiedTypeName name="com.travel.activities.R.id"/>
+<fullyQualifiedTypeName name="com.travel.activities.test.PanoramaTabWidgetTest"/>
+<fullyQualifiedTypeName name="com.travel.activities.PanoramaTabWidget"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="com.travel.activities.UploadDetailsActivity"/>
+</qualifiedTypeNameHistroy>

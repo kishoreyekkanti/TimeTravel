@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="PanoramaTabWidgetTest" project="TimeTravelTest" tests="2" started="2" failures="0" errors="1" ignored="0">
+  <testsuite name="com.travel.activities.test.PanoramaTabWidgetTest" time="8.152">
+    <testcase name="testLaunchesRequiredTabs" classname="com.travel.activities.test.PanoramaTabWidgetTest" time="2.867"/>
+    <testcase name="testPhotoCaptureAndGalleryView" classname="com.travel.activities.test.PanoramaTabWidgetTest" time="5.285">
+      <error>java.lang.ClassCastException: com.travel.activities.PanoramaTabWidget
+at com.travel.activities.test.PanoramaTabWidgetTest.testPhotoCaptureAndGalleryView(PanoramaTabWidgetTest.java:62)
+at java.lang.reflect.Method.invokeNative(Native Method)
+at android.test.InstrumentationTestCase.runMethod(InstrumentationTestCase.java:204)
+at android.test.InstrumentationTestCase.runTest(InstrumentationTestCase.java:194)
+at android.test.ActivityInstrumentationTestCase2.runTest(ActivityInstrumentationTestCase2.java:186)
+at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:169)
+at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:154)
+at android.test.InstrumentationTestRunner.onStart(InstrumentationTestRunner.java:520)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1447)
+
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

@@ -1,0 +1,15 @@
+package com.travel.utils;
+
+
+
+import android.location.Location;
+import android.location.LocationManager;
+import android.widget.Toast;
+
+public class CurrentLocation {
+
+public static Location getCurrentLocation(LocationManager locationManager){
+	return locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+}
+	
+}

@@ -8,5 +8,5 @@
     <uses-library android:name="android.test.runner" />
     </application>
     <uses-sdk android:minSdkVersion="8" />
-    <instrumentation android:targetPackage="com.travel.activities" android:name="android.test.InstrumentationTestRunner" />
+    <instrumentation android:targetPackage="com.travel.activities" android:label="Time Travel Tests" android:name="android.test.InstrumentationTestRunner" />
 </manifest> 

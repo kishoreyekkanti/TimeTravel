@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="PanoramaTabWidgetTest" project="TimeTravelTest" tests="2" started="2" failures="0" errors="1" ignored="0">
+  <testsuite name="com.travel.activities.test.PanoramaTabWidgetTest" time="7.526">
+    <testcase name="testLaunchesRequiredTabs" classname="com.travel.activities.test.PanoramaTabWidgetTest" time="3.0"/>
+    <testcase name="testPhotoCaptureAndGalleryView" classname="com.travel.activities.test.PanoramaTabWidgetTest" time="4.526">
+      <error>java.lang.RuntimeException: This method can not be called from the main application thread
+at android.app.Instrumentation.validateNotAppThread(Instrumentation.java:1427)
+at android.app.Instrumentation.waitForIdleSync(Instrumentation.java:321)
+at com.jayway.android.robotium.solo.ActivityUtils.getCurrentActivity(ActivityUtils.java:110)
+at com.jayway.android.robotium.solo.ActivityUtils.getCurrentActivity(ActivityUtils.java:96)
+at com.jayway.android.robotium.solo.Solo.getCurrentActivity(Solo.java:422)
+at com.travel.activities.test.PanoramaTabWidgetTest$1.run(PanoramaTabWidgetTest.java:57)
+at android.test.InstrumentationTestCase$1.run(InstrumentationTestCase.java:138)
+at android.app.Instrumentation$SyncRunnable.run(Instrumentation.java:1465)
+at android.os.Handler.handleCallback(Handler.java:587)
+at android.os.Handler.dispatchMessage(Handler.java:92)
+at android.os.Looper.loop(Looper.java:123)
+at android.app.ActivityThread.main(ActivityThread.java:4627)
+at java.lang.reflect.Method.invokeNative(Native Method)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:868)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:626)
+at dalvik.system.NativeStart.main(Native Method)
+
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

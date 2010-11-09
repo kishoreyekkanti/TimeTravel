@@ -1,0 +1,35 @@
+package com.travel.utils;
+
+
+
+import android.location.Location;
+import android.location.LocationListener;
+import android.os.Bundle;
+import android.widget.Toast;
+
+private class MyLocationListener implements LocationListener{
+
+	public void onLocationChanged(Location location) {
+		String message = String.format(
+				"New Location \n Latitude: %1$s \n Longitude: %2$s",
+				location.getLatitude(), location.getLongitude()
+				);
+		Toast.makeText(MyLocation.this, message, Toast.LENGTH_LONG).show();
+	}
+
+	public void onProviderDisabled(String provider) {
+		Toast.makeText(MyLocation.this, "Provider disabled by the user, GPS is turned off!",
+				Toast.LENGTH_LONG).show();
+	}
+
+	public void onProviderEnabled(String provider) {
+		Toast.makeText(MyLocation.this, "Provider enabled by the user, GPS is truned on!", Toast.LENGTH_LONG).show();
+		
+	}
+
+	public void onStatusChanged(String provider, int status, Bundle extras) {
+		Toast.makeText(MyLocation.this, "Provider status changed!", Toast.LENGTH_LONG).show();
+		
+	}
+	
+}

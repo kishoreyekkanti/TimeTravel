@@ -1,0 +1,12 @@
+package com.travel.utils;
+
+import android.location.Location;
+
+public class CurrentLocation {
+
+public static Location getCurrentLocation(){
+
+	
+}
+	
+}

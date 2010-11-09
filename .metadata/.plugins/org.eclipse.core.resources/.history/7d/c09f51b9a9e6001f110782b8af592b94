@@ -1,0 +1,13 @@
+package com.travel.activities.test;
+
+import android.test.ActivityInstrumentationTestCase2;
+
+import com.travel.activities.UploadDetailsActivity;
+
+public class UploadDetailsActivityTest extends ActivityInstrumentationTestCase2<UploadDetailsActivity>{
+
+	public UploadDetailsActivityTest(String name){
+		super("com.travel.activities.UploadDetailsActivity",UploadDetailsActivity.class);
+		setName(name;)
+	}
+}

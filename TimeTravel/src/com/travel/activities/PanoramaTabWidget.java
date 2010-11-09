@@ -20,11 +20,11 @@ public void onCreate(Bundle savedInstanceState) {
     // Create an Intent to launch an Activity for the tab (to be reused)
     intent = new Intent().setClass(this, PhotoCaptureActivity.class);
     // Initialize a TabSpec for each tab and add it to the TabHost
-    spec = tabHost.newTabSpec("photo").setIndicator("",res.getDrawable(R.drawable.camera_64)).setContent(intent);
+    spec = tabHost.newTabSpec("camera").setIndicator("",res.getDrawable(R.drawable.camera_64)).setContent(intent);
     tabHost.addTab(spec);
 
     intent = new Intent().setClass(this, ImageViewActivity.class);
-    spec = tabHost.newTabSpec("imageView").setIndicator("",res.getDrawable(R.drawable.gallery_64)).setContent(intent);
+    spec = tabHost.newTabSpec("gallery").setIndicator("",res.getDrawable(R.drawable.gallery_64)).setContent(intent);
     tabHost.addTab(spec);
     
     intent = new Intent().setClass(this, UserPreferenceActivity.class);

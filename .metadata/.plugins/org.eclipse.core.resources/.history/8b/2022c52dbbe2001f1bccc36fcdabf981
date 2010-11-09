@@ -1,0 +1,9 @@
+package com.travel.utils;
+
+public class CurrentLocation {
+
+public static Location getCurrentLocation(){
+	
+}
+	
+}

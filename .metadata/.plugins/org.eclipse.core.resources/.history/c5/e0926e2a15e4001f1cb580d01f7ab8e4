@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!--
+		This is a primitive example showing the different types of preferences
+		available.
+	-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory android:title="@string/dialog_based_preferences">
+
+		<EditTextPreference android:key="edittext_preference"
+			android:title="@string/title_edittext_preference" android:summary="@string/summary_edittext_preference"
+			android:dialogTitle="@string/dialog_title_edittext_preference" />
+
+		<ListPreference android:key="list_preference"
+			android:title="@string/title_list_preference" android:summary="@string/summary_list_preference"
+			android:entries="@array/entries_list_preference" android:entryValues="@array/entryvalues_list_preference"
+			android:dialogTitle="@string/dialog_title_list_preference" />
+
+	</PreferenceCategory>
+
+</PreferenceScreen>

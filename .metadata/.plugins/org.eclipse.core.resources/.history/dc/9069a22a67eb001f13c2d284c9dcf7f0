@@ -1,0 +1,54 @@
+package com.travel.activities.test;
+
+import android.test.ActivityInstrumentationTestCase2;
+import android.view.SurfaceView;
+
+import com.jayway.android.robotium.solo.Solo;
+import com.travel.activities.PhotoCaptureActivity;
+
+public class PhotoCaptureActivityTest extends
+		ActivityInstrumentationTestCase2<PhotoCaptureActivity> {
+	private Solo solo;
+	public PhotoCaptureActivity mActivity;
+
+	public PhotoCaptureActivityTest(String name) {
+		super("com.travel.activities.PhotoCatpureActivity",
+				PhotoCaptureActivity.class);
+		setName(name);
+	}
+
+	@Override
+	public void setUp() throws Exception {
+		super.setUp();
+		mActivity = this.getActivity();
+		solo = new Solo(getInstrumentation(), getActivity());
+	}
+
+	@Override
+	public void tearDown() throws Exception {
+		try {
+			this.solo.finalize();
+		} catch (Throwable e) {
+			e.printStackTrace();
+		}
+		this.getActivity().finish();
+		super.tearDown();
+	}
+
+	public void testActivityLaunchesThePhotoCaptureScreen() {
+		SurfaceView preview = (SurfaceView) mActivity
+				.findViewById(com.travel.activities.R.id.camera_preview);
+		assertNotNull(preview);
+	}
+
+	public void testPhotoCapture() {
+		String acitivityName = solo.getCurrentActivity().getClass().getSimpleName();
+		solo.assertCurrentActivity("Expected Photo Capture activity", acitivityName);
+		solo.clickOnView(mActivity.findViewById(com.travel.activities.R.id.camera_preview));
+		solo.enterText(1, "uploading for testing");
+		solo.clickOnButton("Upload");
+		solo.clickOnView(mActivity.findViewById(com.travel.activities.R.id.gallery));
+		solo.clickOnImage(2);
+	}
+	
+}

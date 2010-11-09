@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="PhotoCaptureActivityTest" project="TimeTravelTest" tests="2" started="2" failures="1" errors="0" ignored="0">
+  <testsuite name="com.travel.activities.test.PhotoCaptureActivityTest" time="12.567">
+    <testcase name="testActivityLaunchesThePhotoCaptureScreen" classname="com.travel.activities.test.PhotoCaptureActivityTest" time="2.28"/>
+    <testcase name="testPhotoCapture" classname="com.travel.activities.test.PhotoCaptureActivityTest" time="10.287">
+      <failure>junit.framework.AssertionFailedError: Button with the text: Upload is not found!
+at com.jayway.android.robotium.solo.Clicker.clickOn(Clicker.java:328)
+at com.jayway.android.robotium.solo.Solo.clickOnButton(Solo.java:565)
+at com.travel.activities.test.PhotoCaptureActivityTest.testPhotoCapture(PhotoCaptureActivityTest.java:49)
+at java.lang.reflect.Method.invokeNative(Native Method)
+at android.test.InstrumentationTestCase.runMethod(InstrumentationTestCase.java:204)
+at android.test.InstrumentationTestCase.runTest(InstrumentationTestCase.java:194)
+at android.test.ActivityInstrumentationTestCase2.runTest(ActivityInstrumentationTestCase2.java:186)
+at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:169)
+at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:154)
+at android.test.InstrumentationTestRunner.onStart(InstrumentationTestRunner.java:520)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1447)
+
+</failure>
+    </testcase>
+  </testsuite>
+</testrun>

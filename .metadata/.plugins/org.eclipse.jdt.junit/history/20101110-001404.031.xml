@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="TimeTravelTest" project="TimeTravelTest" tests="6" started="3" failures="0" errors="1" ignored="0">
+  <testsuite name="com.travel.activities.test.UserPreferenceActivityTest" incomplete="true">
+    <testcase name="testUserSettingsUI" classname="com.travel.activities.test.UserPreferenceActivityTest" incomplete="true"/>
+  </testsuite>
+  <testsuite name="com.travel.activities.test.UploadDetailsActivityTest" incomplete="true">
+    <testcase name="testUploadDetailsActivityHaveCorrectLayout" classname="com.travel.activities.test.UploadDetailsActivityTest" incomplete="true"/>
+  </testsuite>
+  <testsuite name="com.travel.activities.test.PanoramaTabWidgetTest" time="23.34">
+    <testcase name="testLaunchesRequiredTabs" classname="com.travel.activities.test.PanoramaTabWidgetTest" time="3.367"/>
+    <testcase name="testPhotoCaptureAndGalleryView" classname="com.travel.activities.test.PanoramaTabWidgetTest" time="19.973"/>
+  </testsuite>
+  <testsuite name="com.travel.activities.test.PhotoCaptureActivityTest" incomplete="true">
+    <testcase name="testActivityLaunchesThePhotoCaptureScreen" classname="com.travel.activities.test.PhotoCaptureActivityTest" time="0.378">
+      <error>Incomplete: java.lang.RuntimeException
+</error>
+    </testcase>
+    <testcase name="testPhotoCapture" classname="com.travel.activities.test.PhotoCaptureActivityTest" incomplete="true"/>
+  </testsuite>
+</testrun>

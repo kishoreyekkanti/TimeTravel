@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 1 elements(s) to &apos;TimeTravelTest&apos;&#x0A;- Original project: &apos;NotePadTest&apos;&#x0A;- Destination element: &apos;TimeTravelTest&apos;&#x0A;- Original element: &apos;Robotium-Solo1.8.0&apos;" description="Copy folder" destination="=TimeTravelTest" element1="Robotium-Solo1.8.0" files="0" flags="589830" folders="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1288636914921" units="0" version="1.0"/>
+</session>

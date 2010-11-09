@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="PanoramaTabWidgetTest" project="TimeTravelTest" tests="2" started="2" failures="0" errors="1" ignored="0">
+  <testsuite name="com.travel.activities.test.PanoramaTabWidgetTest" time="3.61">
+    <testcase name="testLaunchesRequiredTabs" classname="com.travel.activities.test.PanoramaTabWidgetTest" time="2.882"/>
+    <testcase name="testPhotoCaptureAndGalleryView" classname="com.travel.activities.test.PanoramaTabWidgetTest" time="0.728">
+      <error>Incomplete: java.lang.RuntimeException
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

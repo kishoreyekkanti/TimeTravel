@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="UserPreferenceActivityTest" project="TimeTravelTest" tests="1" started="1" failures="1" errors="0" ignored="0">
+  <testsuite name="com.travel.activities.test.UserPreferenceActivityTest" time="18.505">
+    <testcase name="testUserSettingsUI" classname="com.travel.activities.test.UserPreferenceActivityTest" time="18.505">
+      <failure>junit.framework.AssertionFailedError: The text: Password is not found!
+at com.jayway.android.robotium.solo.Clicker.clickOnText(Clicker.java:295)
+at com.jayway.android.robotium.solo.Clicker.clickOnMenuItem(Clicker.java:213)
+at com.jayway.android.robotium.solo.Solo.clickOnMenuItem(Solo.java:599)
+at com.travel.activities.test.UserPreferenceActivityTest.testUserSettingsUI(UserPreferenceActivityTest.java:47)
+at java.lang.reflect.Method.invokeNative(Native Method)
+at android.test.InstrumentationTestCase.runMethod(InstrumentationTestCase.java:204)
+at android.test.InstrumentationTestCase.runTest(InstrumentationTestCase.java:194)
+at android.test.ActivityInstrumentationTestCase2.runTest(ActivityInstrumentationTestCase2.java:186)
+at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:169)
+at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:154)
+at android.test.InstrumentationTestRunner.onStart(InstrumentationTestRunner.java:520)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1447)
+
+</failure>
+    </testcase>
+  </testsuite>
+</testrun>

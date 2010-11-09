@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="PanoramaTabWidgetTest (Failed Tests first)" project="TimeTravelTest" tests="2" started="2" failures="0" errors="1" ignored="0">
+  <testsuite name="com.travel.activities.test.PanoramaTabWidgetTest" time="47.182">
+    <testcase name="testLaunchesRequiredTabs" classname="com.travel.activities.test.PanoramaTabWidgetTest" time="2.709"/>
+    <testcase name="testPhotoCaptureAndGalleryView" classname="com.travel.activities.test.PanoramaTabWidgetTest" time="44.473">
+      <error>java.lang.RuntimeException: Unable to start activity ComponentInfo{com.travel.activities/com.travel.activities.ImageViewActivity}: java.lang.NullPointerException
+at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2663)
+at android.app.ActivityThread.startActivityNow(ActivityThread.java:2503)
+at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:127)
+at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:339)
+at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:651)
+at android.widget.TabHost.setCurrentTab(TabHost.java:323)
+at com.travel.activities.test.PanoramaTabWidgetTest$1.run(PanoramaTabWidgetTest.java:50)
+at android.test.InstrumentationTestCase$1.run(InstrumentationTestCase.java:138)
+at android.app.Instrumentation$SyncRunnable.run(Instrumentation.java:1465)
+at android.os.Handler.handleCallback(Handler.java:587)
+at android.os.Handler.dispatchMessage(Handler.java:92)
+at android.os.Looper.loop(Looper.java:123)
+at android.app.ActivityThread.main(ActivityThread.java:4627)
+at java.lang.reflect.Method.invokeNative(Native Method)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:868)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:626)
+at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.NullPointerException
+at com.travel.activities.ImageViewActivity.extractRemoteImageURLs(ImageViewActivity.java:184)
+at com.travel.activities.ImageViewActivity.onCreate(ImageViewActivity.java:69)
+at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
+at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2627)
+... 17 more
+
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="UserPreferenceActivityTest" project="TimeTravelTest" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.travel.activities.test.UserPreferenceActivityTest" time="12.959">
+    <testcase name="testUserSettingsUI" classname="com.travel.activities.test.UserPreferenceActivityTest" time="12.959"/>
+  </testsuite>
+</testrun>

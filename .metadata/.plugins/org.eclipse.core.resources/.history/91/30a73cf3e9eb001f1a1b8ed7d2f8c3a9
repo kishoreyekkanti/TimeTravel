@@ -1,0 +1,15 @@
+/**
+ * 
+ */
+package com.travel.activities.test;
+
+import android.test.ActivityInstrumentationTestCase2;
+
+/**
+ * @author ykkuumar
+ *
+ */
+public class UserPreferenceActivityTest extends
+		ActivityInstrumentationTestCase2<UserPreferenceActivity> {
+
+}

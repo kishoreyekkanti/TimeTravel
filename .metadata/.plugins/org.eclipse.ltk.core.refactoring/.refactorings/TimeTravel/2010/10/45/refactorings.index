@@ -1,0 +1,8 @@
+1288503555944	Extract method 'getJson'
+1288503591832	Extract method 'getUrlForCriteria'
+1288516302999	Rename field 'myContext'
+1288516395125	Rename local variable 'i'
+1288517086063	Extract constant 'TWITPIC_BASE_URL'
+1288517104445	Extract constant 'JPG'
+1288525423415	Extract method 'setTextView'
+1288548436824	Rename method 'setTextView'

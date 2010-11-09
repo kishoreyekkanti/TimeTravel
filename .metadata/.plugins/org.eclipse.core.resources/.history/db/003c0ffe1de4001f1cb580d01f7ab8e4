@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="Twitter Settings">
+			<EditTextPreference android:name="Username for Twitter"
+				android:summary="Set username/handle for your twitter account"
+				android:title="Username" android:key="twitter_username" />
+			<EditTextPreference android:name="Password for Twitter"
+				android:summary="Set password for your twitter account"
+				android:title="Password" android:key="twitter_password"
+				android:inputType="textPassword" />
+<SeekBar
+   android:layout_width="fill_parent"
+   android:layout_height="wrap_content"
+   android:layout_margin="10px"
+   android:id="@+id/seekbar"
+   android:max="100"
+   android:progress="50"
+   />
+	</PreferenceCategory>
+</PreferenceScreen>

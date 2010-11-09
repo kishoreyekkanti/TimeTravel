@@ -1,0 +1,24 @@
+package com.travel.activities.test;
+
+import android.test.ActivityInstrumentationTestCase2;
+
+import com.travel.activities.PanoramaTabWidget;
+
+public class PanoramaTabWidgetTest extends ActivityInstrumentationTestCase2<PanoramaTabWidget>{
+	
+	public PanoramaTabWidget mActivity;
+	public PanoramaTabWidgetTest(String name){
+		super("com.travel.activities.PanoramaTabWidget",PanoramaTabWidget.class);
+		setName(name);
+	}
+
+	@Override
+	public void setUp() throws Exception{
+		super.setUp();
+	}
+	
+	public void testLaunchesRequiredTabs(){
+		mActivity = this.getActivity();
+		assertEquals(0,mActivity.getTabHost().getCurrentTab());
+	}
+}

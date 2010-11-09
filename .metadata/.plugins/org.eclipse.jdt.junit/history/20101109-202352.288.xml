@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="PanoramaTabWidgetTest" project="TimeTravelTest" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.travel.activities.test.PanoramaTabWidgetTest" time="8.965">
+    <testcase name="testLaunchesRequiredTabs" classname="com.travel.activities.test.PanoramaTabWidgetTest" time="3.215"/>
+    <testcase name="testPhotoCaptureAndGalleryView" classname="com.travel.activities.test.PanoramaTabWidgetTest" time="5.75"/>
+  </testsuite>
+</testrun>

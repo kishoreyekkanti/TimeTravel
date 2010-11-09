@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="PhotoCaptureActivityTest" project="TimeTravelTest" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.travel.activities.test.PhotoCaptureActivityTest" time="10.277">
+    <testcase name="testActivityLaunchesThePhotoCaptureScreen" classname="com.travel.activities.test.PhotoCaptureActivityTest" time="1.802"/>
+    <testcase name="testPhotoCapture" classname="com.travel.activities.test.PhotoCaptureActivityTest" time="8.474"/>
+  </testsuite>
+</testrun>

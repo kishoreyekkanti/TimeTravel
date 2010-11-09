@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="Twitter Settings">
+			<EditTextPreference android:name="Username for Twitter"
+				android:summary="Set username/handle for your twitter account"
+				android:title="Username" android:key="twitter_username" />
+			<EditTextPreference android:name="Password for Twitter"
+				android:summary="Set password for your twitter account"
+				android:title="Password" android:key="twitter_password"
+				android:inputType="textPassword" />
+        <com.travel.utils.SeekBarPreference  
+                android:dependency="Main_Option"
+                android:key="customPref"
+                android:defaultValue="32"
+                android:title="Custom Preference" />
+	</PreferenceCategory>
+</PreferenceScreen>

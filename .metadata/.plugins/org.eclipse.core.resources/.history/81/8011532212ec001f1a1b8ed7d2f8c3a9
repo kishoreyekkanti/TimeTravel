@@ -1,0 +1,68 @@
+package com.travel.activities.test;
+
+import android.test.ActivityInstrumentationTestCase2;
+import android.util.Log;
+
+import com.jayway.android.robotium.solo.Solo;
+import com.travel.activities.PanoramaTabWidget;
+import com.travel.activities.PhotoCaptureActivity;
+
+public class PanoramaTabWidgetTest extends ActivityInstrumentationTestCase2<PanoramaTabWidget>{
+	
+	private Solo solo;
+	public PanoramaTabWidget mActivity;
+	public PanoramaTabWidgetTest(String name){
+		super("com.travel.activities.PanoramaTabWidget",PanoramaTabWidget.class);
+		setName(name);
+	}
+
+	@Override
+	public void setUp() throws Exception{
+		super.setUp();
+		solo = new Solo(getInstrumentation(), getActivity());
+	}
+
+	@Override
+	public void tearDown() throws Exception {
+		try {
+			this.solo.finalize();
+		} catch (Throwable e) {
+			e.printStackTrace();
+		}
+		this.getActivity().finish();
+		super.tearDown();
+	}
+	
+	public void testLaunchesRequiredTabs(){
+		mActivity = this.getActivity();
+		assertEquals(3,mActivity.getTabWidget().getTabCount());
+		assertEquals(0,mActivity.getTabHost().getCurrentTab());
+		assertEquals("camera", mActivity.getTabHost().getCurrentTabTag());
+
+//		mActivity.getTabHost().setCurrentTab(1);
+//		assertEquals("gallery", mActivity.getTabHost().getCurrentTabTag());
+//		
+//		mActivity.getTabHost().setCurrentTab(2);
+//		assertEquals("preferences", mActivity.getTabHost().getCurrentTabTag());
+	}
+	
+	public void testPhotoCaptureAndGalleryView() throws Throwable{
+		mActivity = this.getActivity();
+		String acitivityName = solo.getCurrentActivity().getClass().getSimpleName();
+		solo.assertCurrentActivity("Expected Photo Capture activity", acitivityName);
+		mActivity.getTabHost().setCurrentTab(0);
+		runTestOnUiThread(new Runnable() {
+            public void run() {
+            	mActivity.getTabHost().setCurrentTab(0);
+            }
+        });
+		
+		Log.d("CURRENT ACTIVITY",solo.getCurrentActivity().toString());
+//		solo.clickOnView(solo.getView(0));
+//		PhotoCaptureActivity photoCaptureActivity = (PhotoCaptureActivity)solo.getCurrentActivity();
+//		solo.clickOnView(mActivity.findViewById(com.travel.activities.R.id.camera_preview));
+//		solo.enterText(0, "uploading for testing");
+//		solo.clickOnButton("Upload");
+//		solo.clickOnView(mActivity.findViewById(com.travel.activities.R.id.gallery));
+	}
+}
