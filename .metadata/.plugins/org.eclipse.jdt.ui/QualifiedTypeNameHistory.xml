@@ -16,16 +16,17 @@
 <fullyQualifiedTypeName name="android.R.layout"/>
 <fullyQualifiedTypeName name="android.R.xml"/>
 <fullyQualifiedTypeName name="com.travel.activities.R.xml"/>
-<fullyQualifiedTypeName name="com.travel.activities.UserPreferenceActivity"/>
 <fullyQualifiedTypeName name="com.travel.activities.R.drawable"/>
-<fullyQualifiedTypeName name="com.travel.activities.R.layout"/>
 <fullyQualifiedTypeName name="com.travel.activities.R.string"/>
 <fullyQualifiedTypeName name="com.travel.activities.ImageViewActivity"/>
 <fullyQualifiedTypeName name="com.travel.activities.test.PhotoCaptureActivityTest"/>
 <fullyQualifiedTypeName name="com.travel.activities.PhotoCaptureActivity"/>
-<fullyQualifiedTypeName name="com.travel.activities.R.id"/>
 <fullyQualifiedTypeName name="com.travel.activities.test.PanoramaTabWidgetTest"/>
 <fullyQualifiedTypeName name="com.travel.activities.PanoramaTabWidget"/>
-<fullyQualifiedTypeName name="android.util.Log"/>
 <fullyQualifiedTypeName name="com.travel.activities.UploadDetailsActivity"/>
+<fullyQualifiedTypeName name="com.travel.activities.R.layout"/>
+<fullyQualifiedTypeName name="com.travel.activities.R.id"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="com.travel.activities.UserPreferenceActivity"/>
+<fullyQualifiedTypeName name="android.app.ProgressDialog"/>
 </qualifiedTypeNameHistroy>

@@ -1,4 +1,4 @@
-#Wed Nov 03 01:24:41 IST 2010
+#Wed Nov 10 01:47:11 IST 2010
 emulatorControl.track.count=42
 com.android.ide.eclipse.ddms.logcat.level=18
 emulatorControl.waypoint.latitude=91
@@ -10,7 +10,7 @@ emulatorControl.waypoint.name=90
 com.android.ide.eclipse.ddms.logcat.time=122
 emulatorControl.waypoint.longitude=91
 com.android.ide.eclipse.ddms.adb=/home/ykkuumar/android/android-sdk-linux_86/tools/adb
-com.android.ide.eclipse.ddms.logcat.message=814
+com.android.ide.eclipse.ddms.logcat.message=1015
 eclipse.preferences.version=1
 emulatorControl.waypoint.elevation=62
 com.android.ide.eclipse.ddms.logcat.pid=42

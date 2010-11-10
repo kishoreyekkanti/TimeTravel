@@ -17,6 +17,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.TypedArray;
@@ -25,6 +26,7 @@ import android.graphics.BitmapFactory;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Log;
@@ -39,12 +41,14 @@ import android.widget.AdapterView.OnItemClickListener;
 
 public class ImageViewActivity extends Activity {
 	LocationManager locationManager;
-	Location location;
-	SharedPreferences preferences;
+	static Location location;
+	static SharedPreferences preferences;
 	String[] remoteImageURLs;
 	private static final String JPG = ".jpg";
 	private static final String TWITPIC_BASE_URL = "http://twitpic.com/show/thumb/";
-
+	JSONArray jsonArray;
+	Gallery gallery;
+	Context imageViewContext;
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -54,32 +58,47 @@ public class ImageViewActivity extends Activity {
 		locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,
 				60000, 1000, new MyLocationListener());
 		location = getCurrentLocation();
-		Log.d("STALENESS", String.valueOf(preferences.getInt("staleness", 1)));
-		Log.d("RADIUS", String.valueOf(preferences.getInt("radius", 1)));
-		Log.d("Latitude", location != null ? String.valueOf(location
-				.getLatitude()) : "");
-		Log.d("Longitude", location != null ? String.valueOf(location
-				.getLongitude()) : "");
 		/*
 		 * Find the gallery defined in the main.xml Apply a new (custom)
 		 * ImageAdapter to it.
 		 */
-		Gallery gallery = (Gallery) findViewById(R.id.gallery);
-		final JSONArray jsonArray = getJson();
-		remoteImageURLs = extractRemoteImageURLs(jsonArray);
-		setImageDescription(jsonArray, 0);
-		setGeoLocation(jsonArray, 0);
-		gallery.setAdapter(new ImageAdapter(this, remoteImageURLs));
-		gallery.setOnItemClickListener(new OnItemClickListener() {
-			public void onItemClick(AdapterView parent, View v, int position,
-					long id) {
-				setImageDescription(jsonArray, position);
-				setGeoLocation(jsonArray, position);
-			}
-		});
+		gallery = (Gallery) findViewById(R.id.gallery);
+		imageViewContext = this;
+		new JSONTask().execute(getString(R.string.webservice_url_get));
 
 	}
 
+	public class JSONTask extends AsyncTask<String, Integer, JSONArray>{
+		
+		@Override
+		protected void onPreExecute(){
+			
+		}
+
+		@Override
+		protected JSONArray doInBackground(String... getUrl) {
+			
+			return getJson(getUrl[0]);
+		}
+		
+		@Override
+		protected void onPostExecute(JSONArray extractedJSON){
+			jsonArray = extractedJSON;
+			remoteImageURLs = extractRemoteImageURLs(jsonArray);
+			setImageDescription(jsonArray, 0);
+			setGeoLocation(jsonArray, 0);
+			gallery.setAdapter(new ImageAdapter(imageViewContext, remoteImageURLs));
+			gallery.setOnItemClickListener(new OnItemClickListener() {
+				public void onItemClick(AdapterView parent, View v, int position,
+						long id) {
+					setImageDescription(jsonArray, position);
+					setGeoLocation(jsonArray, position);
+				}
+			});
+		}
+		
+	}
+	
 	private void setImageDescription(JSONArray jsonArray,int index) {
 		TextView textView = (TextView)findViewById(R.id.image_description);
         try {
@@ -101,10 +120,10 @@ public class ImageViewActivity extends Activity {
 		}
 	}
 	
-	private JSONArray getJson() {
+	private JSONArray getJson(String getUrl) {
 		JSONArray jArray = null;
 		try {
-			HttpGet request = new HttpGet(getUrlForCriteria());
+			HttpGet request = new HttpGet(getUrlForCriteria(getUrl));
 			request.setHeader("Accept", "application/json");
 
 			DefaultHttpClient httpClient = new DefaultHttpClient();
@@ -137,9 +156,8 @@ public class ImageViewActivity extends Activity {
 		return jArray;
 	}
 
-	private String getUrlForCriteria() {
-		StringBuilder remoteServiceUrl = new StringBuilder(
-				getString(R.string.webservice_url_get));
+	private  String getUrlForCriteria(String getUrl) {
+		StringBuilder remoteServiceUrl = new StringBuilder(getUrl);
 		remoteServiceUrl.append("?").append(
 				"latitude=" + location.getLatitude() + "&").append(
 				"longitude=" + location.getLongitude() + "&").append(
@@ -182,9 +200,11 @@ public class ImageViewActivity extends Activity {
 
 	private String[] extractRemoteImageURLs(JSONArray jArray) {
 		String[] remoteUrls = new String[jArray.length()];
+		Log.d("Remote Image URL length",jArray.length()+"");
 		try {
 			for (int i = 0; i < jArray.length(); i++) {
 				JSONObject jsonData = jArray.getJSONObject(i);
+				Log.d("JSON DATA",jsonData.getString("url"));
 				remoteUrls[i] = TWITPIC_BASE_URL+jsonData.getString("url")+JPG;
 			}
 		} catch (JSONException e) {
