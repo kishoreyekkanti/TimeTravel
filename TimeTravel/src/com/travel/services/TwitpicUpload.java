@@ -19,9 +19,9 @@ public class TwitpicUpload {
 	public TwitpicUpload(Context context) {
 		SharedPreferences preferences = PreferenceManager
 				.getDefaultSharedPreferences(context);
-		this.username = preferences.getString("twitter_username", "");
-		this.password =  preferences.getString("twitter_password","");
-		this.includeTweet = preferences.getBoolean("tweet_always", false);
+		this.username = preferences.getString("username", "");
+		this.password =  preferences.getString("password","");
+		this.includeTweet = preferences.getBoolean("tweet_always",false);
 	}
 
 	public String uploadImageFor(String filePath, String tweetMessage)

@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 	<PreferenceCategory android:title="Twitter Settings">
-			<EditTextPreference android:name="Username for Twitter"
-				android:summary="Set username/handle for your twitter account"
-				android:title="Username" android:key="twitter_username" />
-			<EditTextPreference android:name="Password for Twitter"
-				android:summary="Set password for your twitter account"
-				android:title="Password" android:key="twitter_password"
-				android:inputType="textPassword" />
-        <com.travel.utils.SeekBarPreference
-        		android:summary="Select the radius(km) in which you want to fetch images." 
-        		android:key="radius" 
-                android:defaultValue="1"
-                android:title="Radius(km) " />
-        <com.travel.utils.SeekBarPreference
-        		android:summary="Select the radius(km) in which you want to fetch images." 
-        		android:key="staleness" 
-                android:defaultValue="1"
-                android:title="Before days? " />
+		<EditTextPreference android:name="Username for Twitter"
+			android:summary="Set username/handle for your twitter account"
+			android:title="Username" android:key="username" />
+		<EditTextPreference android:name="Password for Twitter"
+			android:summary="Set password for your twitter account"
+			android:title="Password" android:key="password"
+			android:inputType="textPassword" />
+		<CheckBoxPreference android:key="tweet_always"
+			android:title="Tweet about image uploaded" android:defaultValue="false"
+			android:summary="Do you want to always tweet about your images?" />
+		<com.travel.utils.SeekBarPreference
+			android:summary="Select the radius(km) in which you want to fetch images."
+			android:key="radius" android:defaultValue="1" android:title="Radius(km) " />
+		<com.travel.utils.SeekBarPreference
+			android:summary="Select the radius(km) in which you want to fetch images."
+			android:key="staleness" android:defaultValue="1" android:title="Before days? " />
 	</PreferenceCategory>
 </PreferenceScreen>

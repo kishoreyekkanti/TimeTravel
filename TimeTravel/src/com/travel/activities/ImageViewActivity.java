@@ -49,6 +49,8 @@ public class ImageViewActivity extends Activity {
 	JSONArray jsonArray;
 	Gallery gallery;
 	Context imageViewContext;
+	ProgressDialog mProgressDialog;
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -72,7 +74,10 @@ public class ImageViewActivity extends Activity {
 		
 		@Override
 		protected void onPreExecute(){
-			
+			mProgressDialog = new ProgressDialog(imageViewContext);
+			mProgressDialog.setMessage("Downloading Images...");
+			mProgressDialog.setCancelable(false);
+			mProgressDialog.show();
 		}
 
 		@Override
@@ -93,8 +98,10 @@ public class ImageViewActivity extends Activity {
 						long id) {
 					setImageDescription(jsonArray, position);
 					setGeoLocation(jsonArray, position);
+					mProgressDialog.hide();
 				}
 			});
+			mProgressDialog.hide();	
 		}
 		
 	}

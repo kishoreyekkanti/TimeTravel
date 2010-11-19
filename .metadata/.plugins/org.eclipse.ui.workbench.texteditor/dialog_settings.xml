@@ -3,26 +3,26 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="310" key="DIALOG_WIDTH"/>
 		<item value="179" key="DIALOG_Y_ORIGIN"/>
-		<item value="430" key="DIALOG_HEIGHT"/>
 		<item value="1075" key="DIALOG_X_ORIGIN"/>
+		<item value="430" key="DIALOG_HEIGHT"/>
 		<item value="1|Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="wrap"/>
-		<item value="false" key="isRegEx"/>
 		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="OnSeekBarChangeListener" key="selection"/>
+		<item value="location" key="selection"/>
 		<list key="findhistory">
-			<item value="findViewBy"/>
-			<item value="tribe"/>
-			<item value="review"/>
-			<item value="icon"/>
-			<item value="context"/>
-			<item value="finish"/>
-			<item value="Upload"/>
-			<item value="ull_imag"/>
+			<item value="location"/>
+			<item value="getCurrentLocation"/>
+			<item value="version"/>
+			<item value="7"/>
+			<item value="instrument"/>
+			<item value="round"/>
+			<item value="format"/>
+			<item value="twitter_user"/>
 		</list>
 		<list key="replacehistory">
 		</list>

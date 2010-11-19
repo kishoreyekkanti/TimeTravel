@@ -14,5 +14,10 @@
 			<type>2</type>
 			<location>/home/ykkuumar/android/android-sdk-linux_86/platforms/android-8/sources</location>
 		</link>
+		<link>
+			<name>.link1</name>
+			<type>2</type>
+			<location>/home/ykkuumar/android/android-sdk-linux_86/platforms/android-7/sources</location>
+		</link>
 	</linkedResources>
 </projectDescription>
