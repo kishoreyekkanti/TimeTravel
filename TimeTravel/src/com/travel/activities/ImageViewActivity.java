@@ -16,6 +16,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import com.travel.utils.CurrentLocation;
+
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -41,7 +43,6 @@ import android.widget.AdapterView.OnItemClickListener;
 
 public class ImageViewActivity extends Activity {
 	LocationManager locationManager;
-	static Location location;
 	static SharedPreferences preferences;
 	String[] remoteImageURLs;
 	private static final String JPG = ".jpg";
@@ -50,16 +51,14 @@ public class ImageViewActivity extends Activity {
 	Gallery gallery;
 	Context imageViewContext;
 	ProgressDialog mProgressDialog;
-	
+	 Location lastBestKnownLocation;
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.image_view);
 		preferences = PreferenceManager.getDefaultSharedPreferences(this);
 		locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-		locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,
-				60000, 1000, new MyLocationListener());
-		location = getCurrentLocation();
+		setLocationProviders();
 		/*
 		 * Find the gallery defined in the main.xml Apply a new (custom)
 		 * ImageAdapter to it.
@@ -69,7 +68,12 @@ public class ImageViewActivity extends Activity {
 		new JSONTask().execute(getString(R.string.webservice_url_get));
 
 	}
-
+	
+	private void setLocationProviders() {
+		CurrentLocation currentLocation = new CurrentLocation(locationManager);
+		currentLocation.setLocationProvider(locationManager);
+		lastBestKnownLocation = currentLocation.getBestLastKnownLocation();
+	}
 	public class JSONTask extends AsyncTask<String, Integer, JSONArray>{
 		
 		@Override
@@ -98,10 +102,9 @@ public class ImageViewActivity extends Activity {
 						long id) {
 					setImageDescription(jsonArray, position);
 					setGeoLocation(jsonArray, position);
-					mProgressDialog.hide();
 				}
 			});
-			mProgressDialog.hide();	
+			mProgressDialog.dismiss();	
 		}
 		
 	}
@@ -166,43 +169,11 @@ public class ImageViewActivity extends Activity {
 	private  String getUrlForCriteria(String getUrl) {
 		StringBuilder remoteServiceUrl = new StringBuilder(getUrl);
 		remoteServiceUrl.append("?").append(
-				"latitude=" + location.getLatitude() + "&").append(
-				"longitude=" + location.getLongitude() + "&").append(
+				"latitude=" + (lastBestKnownLocation!=null?String.valueOf(lastBestKnownLocation.getLatitude()):"37.422006") + "&").append(
+				"longitude=" + (lastBestKnownLocation!=null?String.valueOf(lastBestKnownLocation.getLongitude()):"-122.084095") + "&").append(
 				"staleness=" + preferences.getInt("staleness", 1) + "&")
 				.append("radius=" + preferences.getInt("radius", 1));
 		return remoteServiceUrl.toString();
-	}
-
-	private Location getCurrentLocation() {
-		return locationManager
-				.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-	}
-
-	private class MyLocationListener implements LocationListener {
-
-		public void onLocationChanged(Location location) {
-			String message = String.format(
-					"New Location \n Latitude: %1$s \n Longitude: %2$s",
-					location.getLatitude(), location.getLongitude());
-			Log.d("UploadDetailsActivity", message);
-		}
-
-		public void onProviderDisabled(String provider) {
-			Log.d("UploadDetailsActivity",
-					"Provider disabled by the user, GPS is turned off!");
-		}
-
-		public void onProviderEnabled(String provider) {
-			Log.d("UploadDetailsActivity",
-					"Provider enabled by the user, GPS is truned on!");
-
-		}
-
-		public void onStatusChanged(String provider, int status, Bundle extras) {
-			Log.d("UploadDetailsActivity", "Provider status changed!");
-
-		}
-
 	}
 
 	private String[] extractRemoteImageURLs(JSONArray jArray) {
