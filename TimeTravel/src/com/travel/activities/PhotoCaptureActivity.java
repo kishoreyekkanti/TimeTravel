@@ -10,6 +10,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.PixelFormat;
 import android.hardware.Camera;
+import android.hardware.Camera.Parameters;
 import android.hardware.Camera.Size;
 import android.os.Bundle;
 import android.text.format.Time;
@@ -24,6 +25,7 @@ public class PhotoCaptureActivity extends Activity {
 	private Camera camera;
 	private SurfaceView preview;
 	private SurfaceHolder previewHolder;
+	private boolean isPreviewRunning = false;
 	protected static final String IMAGE_PATH = "IMAGE_PATH";
 
 	@Override
@@ -103,32 +105,43 @@ public class PhotoCaptureActivity extends Activity {
 
 		public void surfaceChanged(SurfaceHolder holder, int format, int width,
 				int height) {
-			Camera.Parameters parameters = camera.getParameters();
 
-	        List<Size> sizes = parameters.getSupportedPreviewSizes();
-	        Size optimalSize = getOptimalPreviewSize(sizes, width, height);
-	        parameters.setPreviewSize(optimalSize.width, optimalSize.height);
-			
-			parameters.setPictureFormat(PixelFormat.JPEG);
-			camera.setParameters(parameters);
-			camera.startPreview();
+			if (isPreviewRunning) {
+				camera.stopPreview();
+			}
+			try {
+				camera.startPreview();
+			} catch (Exception e) {
+				Log.e("CAMERA PREVIEW", "Cannot start preview", e);
+			}
+			isPreviewRunning = true;
 		}
 
 		public void surfaceCreated(SurfaceHolder holder) {
-			camera = Camera.open();
 			try {
+				camera = Camera.open();
 				camera.setPreviewDisplay(previewHolder);
+				Camera.Parameters parameters = camera.getParameters();
+
+		        Camera.Size s = parameters.getSupportedPreviewSizes().get(0);
+		        parameters.setPreviewSize( s.width, s.height );
+				parameters.setPictureFormat(PixelFormat.JPEG);
+				camera.setParameters(parameters);	
+				camera.setPreviewDisplay(holder);
 			} catch (IOException e) {
 				Log.e("PhotoCaptureActivity", e.toString());
+				finish();
 			}
-
 		}
 
 		public void surfaceDestroyed(SurfaceHolder holder) {
 			Log.i("PhotoCaptureActivity", "Surface destroyed called!");
+			if(isPreviewRunning && camera != null) {
 			camera.stopPreview();
 			camera.release();
 			camera = null;
+			}
+			isPreviewRunning = false;
 		}
 
 	};

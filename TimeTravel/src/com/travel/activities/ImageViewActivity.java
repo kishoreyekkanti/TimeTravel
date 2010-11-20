@@ -177,10 +177,11 @@ public class ImageViewActivity extends Activity {
 	}
 
 	private String[] extractRemoteImageURLs(JSONArray jArray) {
-		String[] remoteUrls = new String[jArray.length()];
+		int urlsSize = jArray!=null?jArray.length():0;
+		String[] remoteUrls = new String[urlsSize];
 		Log.d("Remote Image URL length",jArray.length()+"");
 		try {
-			for (int i = 0; i < jArray.length(); i++) {
+			for (int i = 0; i < urlsSize; i++) {
 				JSONObject jsonData = jArray.getJSONObject(i);
 				Log.d("JSON DATA",jsonData.getString("url"));
 				remoteUrls[i] = TWITPIC_BASE_URL+jsonData.getString("url")+JPG;
