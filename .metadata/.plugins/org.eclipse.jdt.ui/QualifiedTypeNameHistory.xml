@@ -6,7 +6,6 @@
 <fullyQualifiedTypeName name="android.hardware.Camera.Parameters"/>
 <fullyQualifiedTypeName name="android.graphics.PixelFormat"/>
 <fullyQualifiedTypeName name="android.widget.EditText"/>
-<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
 <fullyQualifiedTypeName name="android.text.format.Time"/>
 <fullyQualifiedTypeName name="android.app.Service"/>
 <fullyQualifiedTypeName name="com.travel.activities.R"/>
@@ -22,15 +21,22 @@
 <fullyQualifiedTypeName name="com.travel.activities.test.PanoramaTabWidgetTest"/>
 <fullyQualifiedTypeName name="com.travel.activities.PanoramaTabWidget"/>
 <fullyQualifiedTypeName name="com.travel.activities.UploadDetailsActivity"/>
-<fullyQualifiedTypeName name="com.travel.activities.R.layout"/>
 <fullyQualifiedTypeName name="com.travel.activities.UserPreferenceActivity"/>
 <fullyQualifiedTypeName name="android.app.ProgressDialog"/>
-<fullyQualifiedTypeName name="com.travel.activities.R.id"/>
 <fullyQualifiedTypeName name="com.travel.activities.R.string"/>
 <fullyQualifiedTypeName name="android.os.AsyncTask"/>
-<fullyQualifiedTypeName name="com.travel.activities.ImageViewActivity"/>
 <fullyQualifiedTypeName name="com.standalone.apps.bmi.R.id"/>
 <fullyQualifiedTypeName name="android.widget.SeekBar.OnSeekBarChangeListener"/>
 <fullyQualifiedTypeName name="com.standalone.apps.bmi.CalculatorActivity"/>
 <fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="com.travel.activities.R.layout"/>
+<fullyQualifiedTypeName name="com.travel.activities.R.id"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="com.travel.activities.ImageViewActivity"/>
+<fullyQualifiedTypeName name="com.travel.activities.MapViewActivity"/>
+<fullyQualifiedTypeName name="android.view.View"/>
+<fullyQualifiedTypeName name="android.view.ViewGroup.LayoutParams"/>
+<fullyQualifiedTypeName name="com.google.android.maps.Overlay"/>
+<fullyQualifiedTypeName name="android.content.res.Resources"/>
+<fullyQualifiedTypeName name="com.travel.utils.ImageLocationOverlay"/>
 </qualifiedTypeNameHistroy>

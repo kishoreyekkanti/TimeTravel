@@ -13,18 +13,22 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="location" key="selection"/>
+		<item value="Resources" key="selection"/>
 		<list key="findhistory">
-			<item value="location"/>
-			<item value="getCurrentLocation"/>
-			<item value="version"/>
-			<item value="7"/>
-			<item value="instrument"/>
-			<item value="round"/>
-			<item value="format"/>
-			<item value="twitter_user"/>
+			<item value="resources"/>
+			<item value="-122"/>
+			<item value="dismiss"/>
+			<item value="imagePath"/>
+			<item value="putExtra"/>
+			<item value="Intent"/>
+			<item value="parameter"/>
+			<item value="image_view"/>
 		</list>
 		<list key="replacehistory">
 		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item value="295" key="DIALOG_Y_ORIGIN"/>
+		<item value="446" key="DIALOG_X_ORIGIN"/>
 	</section>
 </section>

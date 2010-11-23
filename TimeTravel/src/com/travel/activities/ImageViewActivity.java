@@ -16,17 +16,15 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.travel.utils.CurrentLocation;
-
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.location.Location;
-import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -34,12 +32,16 @@ import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.Gallery;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.AdapterView.OnItemClickListener;
+
+import com.travel.utils.CurrentLocation;
 
 public class ImageViewActivity extends Activity {
 	LocationManager locationManager;
@@ -51,7 +53,12 @@ public class ImageViewActivity extends Activity {
 	Gallery gallery;
 	Context imageViewContext;
 	ProgressDialog mProgressDialog;
-	 Location lastBestKnownLocation;
+	Location lastBestKnownLocation;
+	Button mapView;
+	TextView latitudeView;
+	TextView longitudeView;
+	TextView imageDescription;
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -59,14 +66,22 @@ public class ImageViewActivity extends Activity {
 		preferences = PreferenceManager.getDefaultSharedPreferences(this);
 		locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 		setLocationProviders();
-		/*
-		 * Find the gallery defined in the main.xml Apply a new (custom)
-		 * ImageAdapter to it.
-		 */
 		gallery = (Gallery) findViewById(R.id.gallery);
 		imageViewContext = this;
+		latitudeView = (TextView)findViewById(R.id.latitude);
+		longitudeView = (TextView)findViewById(R.id.longitude);
+		mapView = (Button)findViewById(R.id.map_lookup);
+		mapView.setVisibility(View.INVISIBLE);
+		mapView.setOnClickListener(new OnClickListener(){
+			public void onClick(View v) {
+				Intent mapViewDetails = new Intent(ImageViewActivity.this,MapViewActivity.class);
+				mapViewDetails.putExtra("latitude",latitudeView.getText());
+				mapViewDetails.putExtra("longitude",longitudeView.getText());
+				mapViewDetails.putExtra("imageDescription",imageDescription.getText());
+				startActivity(mapViewDetails);				
+			}
+		});		
 		new JSONTask().execute(getString(R.string.webservice_url_get));
-
 	}
 	
 	private void setLocationProviders() {
@@ -86,13 +101,13 @@ public class ImageViewActivity extends Activity {
 
 		@Override
 		protected JSONArray doInBackground(String... getUrl) {
-			
 			return getJson(getUrl[0]);
 		}
 		
 		@Override
 		protected void onPostExecute(JSONArray extractedJSON){
 			jsonArray = extractedJSON;
+			if (jsonArray != null) {
 			remoteImageURLs = extractRemoteImageURLs(jsonArray);
 			setImageDescription(jsonArray, 0);
 			setGeoLocation(jsonArray, 0);
@@ -104,28 +119,31 @@ public class ImageViewActivity extends Activity {
 					setGeoLocation(jsonArray, position);
 				}
 			});
+			mapView.setVisibility(View.VISIBLE);
 			mProgressDialog.dismiss();	
 		}
+	}
 		
 	}
 	
 	private void setImageDescription(JSONArray jsonArray,int index) {
-		TextView textView = (TextView)findViewById(R.id.image_description);
+		imageDescription = (TextView)findViewById(R.id.image_description);
         try {
-			textView.setText(jsonArray.getJSONObject(index).getString("description"));
+			if (jsonArray!=null && jsonArray.length() > 0){
+				imageDescription.setText(jsonArray.getJSONObject(index).getString("description"));
+			}
 		} catch (JSONException e) {
-			// TODO Auto-generated catch block
+			Log.e("IMAGE VIEW ACTIVITY",e.toString());
 			e.printStackTrace();
 		}
 	}
 
 	private void setGeoLocation(JSONArray jsonArray,int index) {
-		TextView textView = (TextView)findViewById(R.id.geo_location);
         try {
-			textView.setText("Latitude:"+jsonArray.getJSONObject(index).getDouble("latitude")+"\n"+
-							 "Longitude:"+jsonArray.getJSONObject(index).getDouble("longitude"));
+        	latitudeView.setText(String.valueOf(jsonArray.getJSONObject(index).getDouble("latitude")));
+        	longitudeView.setText(String.valueOf(jsonArray.getJSONObject(index).getDouble("longitude")));
 		} catch (JSONException e) {
-			// TODO Auto-generated catch block
+			Log.e("IMAGE VIEW ACTIVITY",e.toString());
 			e.printStackTrace();
 		}
 	}
@@ -179,7 +197,7 @@ public class ImageViewActivity extends Activity {
 	private String[] extractRemoteImageURLs(JSONArray jArray) {
 		int urlsSize = jArray!=null?jArray.length():0;
 		String[] remoteUrls = new String[urlsSize];
-		Log.d("Remote Image URL length",jArray.length()+"");
+		Log.d("Remote Image URL length",urlsSize+"");
 		try {
 			for (int i = 0; i < urlsSize; i++) {
 				JSONObject jsonData = jArray.getJSONObject(i);

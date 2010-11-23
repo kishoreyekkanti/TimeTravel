@@ -8,8 +8,8 @@
 		<item value="371" key="DIALOG_WIDTH"/>
 		<item value="com.android.ide.eclipse.ddms.views.EmulatorControlView" key="ShowViewDialog.STORE_SELECTED_VIEW_ID"/>
 		<item value="130" key="DIALOG_Y_ORIGIN"/>
-		<item value="536" key="DIALOG_X_ORIGIN"/>
 		<item value="447" key="DIALOG_HEIGHT"/>
+		<item value="536" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 		<list key="ShowViewDialog.STORE_EXPANDED_CATEGORIES_ID">
 			<item value="com.android.ide.eclipse.ddms.views.category"/>

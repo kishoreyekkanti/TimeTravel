@@ -5,11 +5,12 @@
 	<Gallery android:id="@+id/gallery" android:layout_width="fill_parent"
 		android:layout_height="wrap_content" android:gravity="bottom" />
 	<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-		android:autoLink="all"
-		android:id="@+id/image_description" android:text="@string/image_description" 
-		style="@style/textStyle"/>
+		android:autoLink="all" android:id="@+id/image_description"
+		android:text="@string/image_description" style="@style/textStyle"/>
 	<TextView xmlns:android="http://schemas.android.com/apk/res/android"
-		android:autoLink="web"
-		android:id="@+id/geo_location" android:text="@string/geo_location" 
-		style="@style/textStyle"/>		
+		android:autoLink="web" android:id="@+id/latitude" style="@style/textStyle" android:visibility="invisible"/>
+	<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+		android:autoLink="web" android:id="@+id/longitude" style="@style/textStyle" android:visibility="invisible"/>
+	<Button android:text="MapView" android:id="@+id/map_lookup"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
 </LinearLayout>
