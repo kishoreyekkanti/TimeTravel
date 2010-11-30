@@ -16,6 +16,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import com.travel.utils.CurrentLocation;
+
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -66,6 +68,10 @@ public class ImageViewActivity extends Activity {
 		preferences = PreferenceManager.getDefaultSharedPreferences(this);
 		locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 		setLocationProviders();
+		/*
+		 * Find the gallery defined in the main.xml Apply a new (custom)
+		 * ImageAdapter to it.
+		 */
 		gallery = (Gallery) findViewById(R.id.gallery);
 		imageViewContext = this;
 		latitudeView = (TextView)findViewById(R.id.latitude);
