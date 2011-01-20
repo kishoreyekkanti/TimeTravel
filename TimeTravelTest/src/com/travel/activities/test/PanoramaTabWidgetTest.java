@@ -69,13 +69,7 @@ public class PanoramaTabWidgetTest extends ActivityInstrumentationTestCase2<Pano
 		Thread.sleep(500);
 		solo.enterText(0, "uploading for testing");
 		solo.clickOnButton("Upload");
-		
-		runTestOnUiThread(new Runnable() {
-            public void run() {
-            	mActivity.getTabHost().setCurrentTab(1);
-            }
-        });
-		Thread.sleep(500);
+
 		
 	}
 }

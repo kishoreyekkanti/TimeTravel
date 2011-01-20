@@ -35,6 +35,7 @@ public class PhotoCaptureActivityTest extends
 	}
 
 	public void testActivityLaunchesThePhotoCaptureScreen() {
+		mActivity = this.getActivity();
 		SurfaceView preview = (SurfaceView) mActivity
 				.findViewById(com.travel.activities.R.id.camera_preview);
 		assertNotNull(preview);

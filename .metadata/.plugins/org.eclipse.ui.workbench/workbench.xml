@@ -15,7 +15,7 @@
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="116" y="34"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="100" y="34"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="34"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="116" y="34"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="68" y="34"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="122" y="34"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
@@ -23,7 +23,7 @@
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.jdt.ui.PropertiesFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -32,16 +32,10 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PanoramaTabWidget.java" partName="PanoramaTabWidget.java" path="/home/ykkuumar/android-stuff/TimeTravel/TimeTravel/src/com/travel/activities/PanoramaTabWidget.java" title="PanoramaTabWidget.java" tooltip="TimeTravel/src/com/travel/activities/PanoramaTabWidget.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TimeTravel/src/com/travel/activities/PanoramaTabWidget.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="643" selectionTopPixel="172"/>
-</editor>
 </editors>
 <views>
 <view id="com.android.ide.eclipse.ddms.views.LogCatView" partName="LogCat">
@@ -62,7 +56,6 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Errors"/>
 <category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
@@ -171,9 +164,9 @@
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
 <view id="org.eclipse.jdt.ui.TypeHierarchy"/>
 <view id="org.eclipse.jdt.junit.ResultView"/>
+<view id="com.android.ide.eclipse.ddms.views.LogCatView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="com.android.ide.eclipse.ddms.views.EmulatorControlView"/>
-<view id="com.android.ide.eclipse.ddms.views.LogCatView"/>
 <fastViewBars>
 <fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="org.eclipse.search.ui.views.SearchView" style="0">
 <fastViews>
@@ -238,7 +231,7 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1d8e367" ratio="0.36723164" ratioLeft="260" ratioRight="448" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1d8e367" ratio="0.7824859" ratioLeft="554" ratioRight="154" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LogCat"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
@@ -256,175 +249,12 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TimeTravel/src/com/travel/utils/ImageLocationOverlay.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/TimeTravel/res/layout/photo_capture.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TimeTravel/src/com/travel/activities/PhotoCaptureActivity.java"/>
-<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=TimeTravel/\/home\/ykkuumar\/android\/android-sdk-linux_86\/platforms\/android-7\/android.jar&lt;android.hardware(Camera.class"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/TimeTravel/AndroidManifest.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TimeTravel/src/com/travel/activities/MapViewActivity.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BMICalculator/src/com/standalone/apps/bmi/CalculatorActivity.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/BMICalculatorTest/src/com/standalone/apps/bmi/test/CalculatorActivityTest.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/BMICalculatorTest/AndroidManifest.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/TimeTravel/AndroidManifest.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TimeTravel/src/com/travel/activities/PanoramaTabWidget.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TimeTravel/src/com/travel/activities/PhotoCaptureActivity.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TimeTravel/src/com/travel/activities/UploadDetailsActivity.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.resources.ResourcesEditor" path="/TimeTravelTest/res/values/strings.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TimeTravel/gen/com/travel/activities/R.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.resources.ResourcesEditor" path="/TimeTravel/res/values/strings.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TimeTravel/src/com/travel/activities/UserPreferenceActivity.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TimeTravel/src/com/travel/utils/SeekBarPreference.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TimeTravel/src/com/travel/services/TwitpicUpload.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TimeTravel/src/com/travel/utils/ImageLocationOverlay.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TimeTravel/src/com/travel/activities/ImageViewActivity.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TimeTravel/src/com/travel/activities/PanoramaTabWidget.java"/>
-</editors>
-<item historyLabel="PhotoCaptureActivity.java" index="2">
-<position info="not_deleted" x="1451" y="0"/>
-</item>
-<item historyLabel="Camera.class" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="PhotoCaptureActivity.java" index="2">
-<position info="not_deleted" x="1915" y="0"/>
-</item>
-<item historyLabel="ImageLocationOverlay.java" index="0">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="PhotoCaptureActivity.java" index="2">
-<position info="not_deleted" x="1915" y="0"/>
-</item>
-<item historyLabel="photo_capture.xml" index="1"/>
-<item historyLabel="TimeTravel Manifest" index="4"/>
-<item historyLabel="MapViewActivity.java" index="5">
-<position info="not_deleted" x="1643" y="21"/>
-</item>
-<item historyLabel="CalculatorActivity.java" index="6">
-<position info="not_deleted" x="2160" y="322"/>
-</item>
-<item historyLabel="CalculatorActivityTest.java" index="7">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="BMICalculatorTest Manifest" index="8"/>
-<item historyLabel="CalculatorActivityTest.java" index="7">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="CalculatorActivityTest.java" index="7">
-<position info="not_deleted" x="1090" y="0"/>
-</item>
-<item historyLabel="BMICalculatorTest Manifest" index="8"/>
-<item historyLabel="CalculatorActivity.java" index="6">
-<position info="not_deleted" x="2160" y="322"/>
-</item>
-<item historyLabel="TimeTravel Manifest" index="9"/>
-<item historyLabel="PanoramaTabWidget.java" index="10">
-<position info="not_deleted" x="738" y="0"/>
-</item>
-<item historyLabel="PhotoCaptureActivity.java" index="11">
-<position info="not_deleted" x="570" y="20"/>
-</item>
-<item historyLabel="PhotoCaptureActivity.java" index="11">
-<position info="not_deleted" x="1475" y="0"/>
-</item>
-<item historyLabel="PhotoCaptureActivity.java" index="11">
-<position info="not_deleted" x="1514" y="13"/>
-</item>
-<item historyLabel="PhotoCaptureActivity.java" index="11">
-<position info="not_deleted" x="1769" y="0"/>
-</item>
-<item historyLabel="PhotoCaptureActivity.java" index="11">
-<position info="not_deleted" x="1489" y="0"/>
-</item>
-<item historyLabel="PanoramaTabWidget.java" index="10">
-<position info="not_deleted" x="738" y="0"/>
-</item>
-<item historyLabel="UploadDetailsActivity.java" index="12">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="UploadDetailsActivity.java" index="12">
-<position info="not_deleted" x="1996" y="0"/>
-</item>
-<item historyLabel="UploadDetailsActivity.java" index="12">
-<position info="not_deleted" x="2573" y="8"/>
-</item>
-<item historyLabel="strings.xml" index="13"/>
-<item historyLabel="UploadDetailsActivity.java" index="12">
-<position info="not_deleted" x="2628" y="0"/>
-</item>
-<item historyLabel="R.java" index="14">
-<position info="not_deleted" x="2152" y="19"/>
-</item>
-<item historyLabel="UploadDetailsActivity.java" index="12">
-<position info="not_deleted" x="2628" y="0"/>
-</item>
-<item historyLabel="strings.xml" index="15"/>
-<item historyLabel="UploadDetailsActivity.java" index="12">
-<position info="not_deleted" x="3162" y="9"/>
-</item>
-<item historyLabel="PanoramaTabWidget.java" index="10">
-<position info="not_deleted" x="1235" y="0"/>
-</item>
-<item historyLabel="UserPreferenceActivity.java" index="16">
-<position info="not_deleted" x="118" y="22"/>
-</item>
-<item historyLabel="strings.xml" index="15"/>
-<item historyLabel="SeekBarPreference.java" index="17">
-<position info="not_deleted" x="2405" y="6"/>
-</item>
-<item historyLabel="TwitpicUpload.java" index="18">
-<position info="not_deleted" x="924" y="918"/>
-</item>
-<item historyLabel="SeekBarPreference.java" index="17">
-<position info="not_deleted" x="2405" y="6"/>
-</item>
-<item historyLabel="UserPreferenceActivity.java" index="16">
-<position info="not_deleted" x="118" y="22"/>
-</item>
-<item historyLabel="ImageLocationOverlay.java" index="19">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="UploadDetailsActivity.java" index="12">
-<position info="not_deleted" x="3162" y="9"/>
-</item>
-<item historyLabel="UserPreferenceActivity.java" index="16">
-<position info="not_deleted" x="118" y="22"/>
-</item>
-<item historyLabel="ImageViewActivity.java" index="20">
-<position info="not_deleted" x="1390" y="0"/>
-</item>
-<item historyLabel="UploadDetailsActivity.java" index="12">
-<position info="not_deleted" x="3162" y="9"/>
-</item>
-<item historyLabel="ImageViewActivity.java" index="20">
-<position info="not_deleted" x="1390" y="0"/>
-</item>
-<item historyLabel="UserPreferenceActivity.java" index="16">
-<position info="not_deleted" x="118" y="22"/>
-</item>
-<item historyLabel="ImageLocationOverlay.java" index="19">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="SeekBarPreference.java" index="17">
-<position info="not_deleted" x="2405" y="6"/>
-</item>
-<item historyLabel="strings.xml" index="15"/>
-<item active="true" historyLabel="PanoramaTabWidget.java" index="21">
-<position info="not_deleted" x="204" y="17"/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="left"/>
-</trimArea>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1d8e367"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -437,11 +267,32 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PanoramaTabWidget.java" tooltip="TimeTravel/src/com/travel/activities/PanoramaTabWidget.java">
-<persistable path="/TimeTravel/src/com/travel/activities/PanoramaTabWidget.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="BMICalculatorTest/AndroidManifest.xml">
+<persistable path="/BMICalculatorTest/AndroidManifest.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CalculatorActivityTest.java" tooltip="BMICalculatorTest/src/com/standalone/apps/bmi/test/CalculatorActivityTest.java">
+<persistable path="/BMICalculatorTest/src/com/standalone/apps/bmi/test/CalculatorActivityTest.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="main.xml" tooltip="BMICalculator/res/layout/main.xml">
+<persistable path="/BMICalculator/res/layout/main.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="BMICalculator/AndroidManifest.xml">
+<persistable path="/BMICalculator/AndroidManifest.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CalculatorActivity.java" tooltip="BMICalculator/src/com/standalone/apps/bmi/CalculatorActivity.java">
+<persistable path="/BMICalculator/src/com/standalone/apps/bmi/CalculatorActivity.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ImageViewActivity.java" tooltip="TimeTravel/src/com/travel/activities/ImageViewActivity.java">
 <persistable path="/TimeTravel/src/com/travel/activities/ImageViewActivity.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="main.xml" tooltip="TimeTravel/res/layout/main.xml">
+<persistable path="/TimeTravel/res/layout/main.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="image_view.xml" tooltip="TimeTravel/res/layout/image_view.xml">
+<persistable path="/TimeTravel/res/layout/image_view.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PanoramaTabWidget.java" tooltip="TimeTravel/src/com/travel/activities/PanoramaTabWidget.java">
+<persistable path="/TimeTravel/src/com/travel/activities/PanoramaTabWidget.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ImageLocationOverlay.java" tooltip="TimeTravel/src/com/travel/utils/ImageLocationOverlay.java">
 <persistable path="/TimeTravel/src/com/travel/utils/ImageLocationOverlay.java"/>
@@ -460,27 +311,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="R.java" tooltip="TimeTravel/gen/com/travel/activities/R.java">
 <persistable path="/TimeTravel/gen/com/travel/activities/R.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.resources.ResourcesEditor" name="strings.xml" tooltip="TimeTravelTest/res/values/strings.xml">
-<persistable path="/TimeTravelTest/res/values/strings.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UploadDetailsActivity.java" tooltip="TimeTravel/src/com/travel/activities/UploadDetailsActivity.java">
-<persistable path="/TimeTravel/src/com/travel/activities/UploadDetailsActivity.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PhotoCaptureActivity.java" tooltip="TimeTravel/src/com/travel/activities/PhotoCaptureActivity.java">
-<persistable path="/TimeTravel/src/com/travel/activities/PhotoCaptureActivity.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="TimeTravel/AndroidManifest.xml">
-<persistable path="/TimeTravel/AndroidManifest.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="BMICalculatorTest/AndroidManifest.xml">
-<persistable path="/BMICalculatorTest/AndroidManifest.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CalculatorActivityTest.java" tooltip="BMICalculatorTest/src/com/standalone/apps/bmi/test/CalculatorActivityTest.java">
-<persistable path="/BMICalculatorTest/src/com/standalone/apps/bmi/test/CalculatorActivityTest.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CalculatorActivity.java" tooltip="BMICalculator/src/com/standalone/apps/bmi/CalculatorActivity.java">
-<persistable path="/BMICalculator/src/com/standalone/apps/bmi/CalculatorActivity.java"/>
 </file>
 </mruList>
 </workbench>
