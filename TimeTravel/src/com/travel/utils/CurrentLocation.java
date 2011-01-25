@@ -106,10 +106,8 @@ public class CurrentLocation {
 
 		        //if there are both values use the latest one
 		        if(gpsLocation != null && networkLocation != null){
-		            if(gpsLocation.getTime() > networkLocation.getTime())
-		                return gpsLocation;
-		            else
-		                return networkLocation;
+		        	Log.d("GPS Location:"+gpsLocation.getTime()," NetworkLocation:"+networkLocation.getTime());
+		        	return gpsLocation.getTime() > networkLocation.getTime()? gpsLocation : networkLocation;
 		        }
 
 		        //In case one of them was null then use the one that is not null
@@ -120,7 +118,7 @@ public class CurrentLocation {
 		        if (networkLocation != null){
 		            return networkLocation;
 		        }
-		        
+		        Log.e("CurrentLocation","Unable to determine the current location");
 		        return null;
 		}	
 

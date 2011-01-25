@@ -16,8 +16,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.travel.utils.CurrentLocation;
-
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -32,6 +30,9 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.View.OnClickListener;
@@ -94,6 +95,32 @@ public class ImageViewActivity extends Activity {
 		CurrentLocation currentLocation = new CurrentLocation(locationManager);
 		currentLocation.setLocationProvider(locationManager);
 		lastBestKnownLocation = currentLocation.getBestLastKnownLocation();
+	}
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+	    MenuInflater inflater = getMenuInflater();
+	    inflater.inflate(R.menu.map_menu, menu);
+	    return true;
+	}
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item){
+		switch(item.getItemId()){
+		case R.id.map_menu_item:
+			  selectMapMenu();
+			  return true;
+		default:
+			return super.onOptionsItemSelected(item);
+		}
+	}
+	
+	private void selectMapMenu(){
+		Intent mapViewDetails = new Intent(ImageViewActivity.this,MapViewActivity.class);
+		mapViewDetails.putExtra("latitude",latitudeView.getText());
+		mapViewDetails.putExtra("longitude",longitudeView.getText());
+		mapViewDetails.putExtra("imageDescription",imageDescription.getText());
+		startActivity(mapViewDetails);
 	}
 	public class JSONTask extends AsyncTask<String, Integer, JSONArray>{
 		

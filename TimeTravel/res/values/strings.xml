@@ -7,4 +7,6 @@
     <string name="geo_location">Geo location of the image</string>
     <string name="webservice_url_post">http://panorama.heroku.com/location/create</string>
     <string name="webservice_url_get">http://panorama.heroku.com/location/index</string>
+    <string name="map_view_desc">Map View</string>
+    <string name="location_unavailable">Unable to retrieve your current location</string>
 </resources>

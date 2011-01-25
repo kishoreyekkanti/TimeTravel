@@ -33,15 +33,14 @@ public class PhotoCaptureActivity extends Activity {
 		setContentView(R.layout.photo_capture);
 		Log.i("PhotoCaptureActivity", "Initializing the camera surface now");
 		preview = (SurfaceView) findViewById(R.id.camera_preview);
+		previewHolder = preview.getHolder();
+		previewHolder.addCallback(surfaceCallback);
+		previewHolder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
 		preview.setOnClickListener(new OnClickListener(){
 			public void onClick(View v) {
 				takePicture();
 			}
 		});
-		previewHolder = preview.getHolder();
-		previewHolder.addCallback(surfaceCallback);
-		previewHolder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
-		
 	}
     
 	private void takePicture() {
@@ -118,12 +117,13 @@ public class PhotoCaptureActivity extends Activity {
 
 		public void surfaceCreated(SurfaceHolder holder) {
 			try {
+				Log.e("Photo Capture activity","Surface created");
 				camera = Camera.open();
 				camera.setPreviewDisplay(previewHolder);
 				Camera.Parameters parameters = camera.getParameters();
 
-		        Camera.Size s = parameters.getSupportedPreviewSizes().get(0);
-		        parameters.setPreviewSize( s.width, s.height );
+//		        Camera.Size s = parameters.getSupportedPreviewSizes().get(0);
+//		        parameters.setPreviewSize( s.width, s.height );
 				parameters.setPictureFormat(PixelFormat.JPEG);
 				camera.setParameters(parameters);	
 				camera.setPreviewDisplay(holder);

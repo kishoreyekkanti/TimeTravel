@@ -13,16 +13,16 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="Resources" key="selection"/>
+		<item value="Context" key="selection"/>
 		<list key="findhistory">
+			<item value="context"/>
+			<item value="onlocation"/>
+			<item value="current"/>
+			<item value="map_view"/>
+			<item value="debuggable"/>
+			<item value="debuggabl"/>
 			<item value="resources"/>
 			<item value="-122"/>
-			<item value="dismiss"/>
-			<item value="imagePath"/>
-			<item value="putExtra"/>
-			<item value="Intent"/>
-			<item value="parameter"/>
-			<item value="image_view"/>
 		</list>
 		<list key="replacehistory">
 		</list>
