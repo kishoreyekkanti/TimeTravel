@@ -57,9 +57,8 @@ public class ImageViewActivity extends Activity {
 	Context imageViewContext;
 	ProgressDialog mProgressDialog;
 	Location lastBestKnownLocation;
-	Button mapView;
-	TextView latitudeView;
-	TextView longitudeView;
+	String latitudeView;
+	String longitudeView;
 	TextView imageDescription;
 	
 	@Override
@@ -75,19 +74,6 @@ public class ImageViewActivity extends Activity {
 		 */
 		gallery = (Gallery) findViewById(R.id.gallery);
 		imageViewContext = this;
-		latitudeView = (TextView)findViewById(R.id.latitude);
-		longitudeView = (TextView)findViewById(R.id.longitude);
-		mapView = (Button)findViewById(R.id.map_lookup);
-		mapView.setVisibility(View.INVISIBLE);
-		mapView.setOnClickListener(new OnClickListener(){
-			public void onClick(View v) {
-				Intent mapViewDetails = new Intent(ImageViewActivity.this,MapViewActivity.class);
-				mapViewDetails.putExtra("latitude",latitudeView.getText());
-				mapViewDetails.putExtra("longitude",longitudeView.getText());
-				mapViewDetails.putExtra("imageDescription",imageDescription.getText());
-				startActivity(mapViewDetails);				
-			}
-		});		
 		new JSONTask().execute(getString(R.string.webservice_url_get));
 	}
 	
@@ -117,8 +103,8 @@ public class ImageViewActivity extends Activity {
 	
 	private void selectMapMenu(){
 		Intent mapViewDetails = new Intent(ImageViewActivity.this,MapViewActivity.class);
-		mapViewDetails.putExtra("latitude",latitudeView.getText());
-		mapViewDetails.putExtra("longitude",longitudeView.getText());
+		mapViewDetails.putExtra("latitude",latitudeView);
+		mapViewDetails.putExtra("longitude",longitudeView);
 		mapViewDetails.putExtra("imageDescription",imageDescription.getText());
 		startActivity(mapViewDetails);
 	}
@@ -152,7 +138,6 @@ public class ImageViewActivity extends Activity {
 					setGeoLocation(jsonArray, position);
 				}
 			});
-			mapView.setVisibility(View.VISIBLE);
 			mProgressDialog.dismiss();	
 		}
 	}
@@ -173,8 +158,8 @@ public class ImageViewActivity extends Activity {
 
 	private void setGeoLocation(JSONArray jsonArray,int index) {
         try {
-        	latitudeView.setText(String.valueOf(jsonArray.getJSONObject(index).getDouble("latitude")));
-        	longitudeView.setText(String.valueOf(jsonArray.getJSONObject(index).getDouble("longitude")));
+        	latitudeView = String.valueOf(jsonArray.getJSONObject(index).getDouble("latitude"));
+        	longitudeView = String.valueOf(jsonArray.getJSONObject(index).getDouble("longitude"));
 		} catch (JSONException e) {
 			Log.e("IMAGE VIEW ACTIVITY",e.toString());
 			e.printStackTrace();

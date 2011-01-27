@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="26" version="2.0">
+<workbench progressCount="24" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="0" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -18,7 +18,7 @@
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="34"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="116" y="34"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="122" y="34"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="172" y="34"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
@@ -42,63 +42,31 @@
 <part id="2"/>
 <part id="3"/>
 <part id="4"/>
-<part id="5"/>
-<part id="6"/>
-<part id="7"/>
-<part id="8"/>
-<part id="9"/>
-<part id="10"/>
-<part id="11"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PhotoCaptureActivity.java" partName="PhotoCaptureActivity.java" path="/home/ykkuumar/android-stuff/TimeTravel/TimeTravel/src/com/travel/activities/PhotoCaptureActivity.java" title="PhotoCaptureActivity.java" tooltip="TimeTravel/src/com/travel/activities/PhotoCaptureActivity.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TimeTravel/src/com/travel/activities/PhotoCaptureActivity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="6" selectionOffset="4184" selectionTopPixel="1206"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UploadDetailsActivity.java" partName="UploadDetailsActivity.java" path="/home/ykkuumar/android-stuff/TimeTravel/TimeTravel/src/com/travel/activities/UploadDetailsActivity.java" title="UploadDetailsActivity.java" tooltip="TimeTravel/src/com/travel/activities/UploadDetailsActivity.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TimeTravel/src/com/travel/activities/UploadDetailsActivity.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2307" selectionTopPixel="410"/>
 </editor>
-<editor id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="photo_capture.xml" partName="photo_capture.xml" path="/home/ykkuumar/android-stuff/TimeTravel/TimeTravel/res/layout/photo_capture.xml" title="photo_capture.xml" tooltip="TimeTravel/res/layout/photo_capture.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TimeTravel/res/layout/photo_capture.xml"/>
-</editor>
-<editor id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" partName="TimeTravel Manifest" path="/home/ykkuumar/android-stuff/TimeTravel/TimeTravel/AndroidManifest.xml" title="TimeTravel Manifest" tooltip="TimeTravel/AndroidManifest.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TimeTravel/AndroidManifest.xml"/>
-</editor>
-<editor id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="image_view.xml" partName="image_view.xml" path="/home/ykkuumar/android-stuff/TimeTravel/TimeTravel/res/layout/image_view.xml" title="image_view.xml" tooltip="TimeTravel/res/layout/image_view.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TimeTravel/res/layout/image_view.xml"/>
-</editor>
-<editor id="com.android.ide.eclipse.editors.xml.XmlEditor" name="preferences.xml" partName="preferences.xml" path="/home/ykkuumar/android-stuff/TimeTravel/TimeTravel/res/xml/preferences.xml" title="preferences.xml" tooltip="TimeTravel/res/xml/preferences.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TimeTravel/res/xml/preferences.xml"/>
-</editor>
-<editor id="com.android.ide.eclipse.editors.menu.MenuEditor" name="map_menu.xml" partName="map_menu.xml" path="/home/ykkuumar/android-stuff/TimeTravel/TimeTravel/res/menu/map_menu.xml" title="map_menu.xml" tooltip="TimeTravel/res/menu/map_menu.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TimeTravel/res/menu/map_menu.xml"/>
-</editor>
-<editor id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="map_view.xml" partName="map_view.xml" path="/home/ykkuumar/android-stuff/TimeTravel/TimeTravel/res/layout/map_view.xml" title="map_view.xml" tooltip="TimeTravel/res/layout/map_view.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TimeTravel/res/layout/map_view.xml"/>
-</editor>
-<editor id="com.android.ide.eclipse.editors.resources.ResourcesEditor" name="strings.xml" partName="strings.xml" path="/home/ykkuumar/android-stuff/TimeTravel/TimeTravel/res/values/strings.xml" title="strings.xml" tooltip="TimeTravel/res/values/strings.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TimeTravel/res/values/strings.xml"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ImageViewActivity.java" partName="ImageViewActivity.java" path="/home/ykkuumar/android-stuff/TimeTravel/TimeTravel/src/com/travel/activities/ImageViewActivity.java" title="ImageViewActivity.java" tooltip="TimeTravel/src/com/travel/activities/ImageViewActivity.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TimeTravel/src/com/travel/activities/ImageViewActivity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="20" selectionOffset="3184" selectionTopPixel="720"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MapViewActivity.java" partName="MapViewActivity.java" path="/home/ykkuumar/android-stuff/TimeTravel/TimeTravel/src/com/travel/activities/MapViewActivity.java" title="MapViewActivity.java" tooltip="TimeTravel/src/com/travel/activities/MapViewActivity.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TimeTravel/src/com/travel/activities/MapViewActivity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3687" selectionTopPixel="1851"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TwitpicUpload.java" partName="TwitpicUpload.java" path="/home/ykkuumar/android-stuff/TimeTravel/TimeTravel/src/com/travel/services/TwitpicUpload.java" title="TwitpicUpload.java" tooltip="TimeTravel/src/com/travel/services/TwitpicUpload.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TimeTravel/src/com/travel/services/TwitpicUpload.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1876" selectionTopPixel="264"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CurrentLocation.java" partName="CurrentLocation.java" path="/home/ykkuumar/android-stuff/TimeTravel/TimeTravel/src/com/travel/utils/CurrentLocation.java" title="CurrentLocation.java" tooltip="TimeTravel/src/com/travel/utils/CurrentLocation.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TimeTravel/src/com/travel/utils/CurrentLocation.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="17" selectionOffset="1259" selectionTopPixel="1118"/>
+<editorState selectionHorizontalPixel="0" selectionLength="3860" selectionOffset="228" selectionTopPixel="1420"/>
 </editor>
 <editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MyLocation.java" partName="MyLocation.java" path="/home/ykkuumar/android-stuff/track-me/TrackMe/src/com/track/mylocation/MyLocation.java" title="MyLocation.java" tooltip="TrackMe/src/com/track/mylocation/MyLocation.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TrackMe/src/com/track/mylocation/MyLocation.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1792" selectionTopPixel="587"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1342" selectionTopPixel="751"/>
+</editor>
+<editor id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" partName="TrackMe Manifest" path="/home/ykkuumar/android-stuff/track-me/TrackMe/AndroidManifest.xml" title="TrackMe Manifest" tooltip="TrackMe/AndroidManifest.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/TrackMe/AndroidManifest.xml"/>
 </editor>
 </editors>
 <views>
-<view id="com.android.ide.eclipse.ddms.views.LogCatView" partName="LogCat">
-<viewState/>
-</view>
 <view id="org.eclipse.jdt.junit.ResultView" partName="JUnit">
 <viewState failuresOnly="false" layout="1" orientation="2" ratio="500" scroll="false" time="true"/>
 </view>
@@ -108,8 +76,27 @@
 <view id="org.eclipse.search.ui.views.SearchView" partName="Search">
 <viewState isPinned="false">
 <view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
-<view IMemento.internal.id="org.eclipse.jdt.ui.JavaSearchResultPage" org.eclipse.jdt.search.resultpage.grouping="3" org.eclipse.jdt.search.resultpage.limit="1000" org.eclipse.jdt.search.resultpage.limit_enabled="TRUE" org.eclipse.jdt.search.resultpage.sorting="1" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2"/>
 </viewState>
+</view>
+<view id="com.android.ide.eclipse.ddms.views.DeviceView" partName="Devices">
+<viewState/>
+</view>
+<view id="com.android.ide.eclipse.ddms.views.ThreadView" partName="Threads">
+<viewState/>
+</view>
+<view id="org.eclipse.ant.ui.views.AntView" partName="Ant">
+<viewState>
+<project error="false" name="TimeTravelTest" path="/TimeTravelTest/build.xml"/>
+<project error="false" name="TimeTravel" path="/TimeTravel/build.xml"/>
+<filterInternalTargets value="false"/>
+</viewState>
+</view>
+<view id="com.android.ide.eclipse.ddms.views.HeapView" partName="Heap"/>
+<view id="com.android.ide.eclipse.ddms.views.LogCatView" partName="LogCat">
+<viewState/>
+</view>
+<view id="com.android.ide.eclipse.ddms.views.FileExplorerView" partName="File Explorer">
+<viewState/>
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
@@ -123,9 +110,6 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
-</view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
-<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="Aggregate for window 1287908442185">
@@ -156,14 +140,16 @@
 </customFilters>
 </viewState>
 </view>
-<view id="org.eclipse.ant.ui.views.AntView" partName="Ant">
-<viewState>
-<project error="false" name="TimeTravelTest" path="/TimeTravelTest/build.xml"/>
-<project error="false" name="TimeTravel" path="/TimeTravel/build.xml"/>
-<filterInternalTargets value="false"/>
-</viewState>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="com.android.ide.eclipse.ddms.views.EmulatorControlView" partName="Emulator Control">
+<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
+<view id="com.android.ide.eclipse.ddms.views.AllocTrackerView" partName="Allocation Tracker">
+<viewState/>
+</view>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc">
 <viewState/>
 </view>
@@ -236,7 +222,6 @@
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
 <view id="org.eclipse.jdt.ui.TypeHierarchy"/>
 <view id="org.eclipse.jdt.junit.ResultView"/>
-<view id="com.android.ide.eclipse.ddms.views.LogCatView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <fastViewBars>
 <fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="org.eclipse.search.ui.views.SearchView" style="0">
@@ -313,20 +298,116 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@fbc1e8" ratio="0.4124294" ratioLeft="292" ratioRight="416" relationship="4" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="2">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1307993" ratio="0.78107345" ratioLeft="553" ratioRight="155" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LabelNotFound"/>
 <page content="com.android.ide.eclipse.ddms.views.EmulatorControlView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="0" fixed="0" version="0.016">
+<descriptor class="com.android.ide.eclipse.ddms.Perspective" id="com.android.ide.eclipse.ddms.Perspective" label="DDMS"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="adt.actionSet.wizards"/>
+<alwaysOnActionSet id="adt.actionSet.refactorings"/>
+<alwaysOnActionSet id="adt.actionSet.avdManager"/>
+<alwaysOnActionSet id="com.google.gdt.eclipse.suite.actionSet.10.gwt"/>
+<alwaysOnActionSet id="com.google.gdt.eclipse.suite.actionSet.15.speedTracer"/>
+<alwaysOnActionSet id="com.google.gdt.eclipse.suite.actionSet.20.gae"/>
+<alwaysOnActionSet id="com.google.gdt.eclipse.suite.actionSet"/>
+<show_view_action id="com.android.ide.eclipse.ddms.views.DeviceView"/>
+<show_view_action id="com.android.ide.eclipse.ddms.views.FileExplorerView"/>
+<show_view_action id="com.android.ide.eclipse.ddms.views.HeapView"/>
+<show_view_action id="com.android.ide.eclipse.ddms.views.AllocTrackerView"/>
+<show_view_action id="com.android.ide.eclipse.ddms.views.LogCatView"/>
+<show_view_action id="com.android.ide.eclipse.ddms.views.ThreadView"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<show_view_action id="org.eclipse.ui.views.BookmarkView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.PropertySheet"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.ui.views.ProgressView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<perspective_action id="org.eclipse.ui.resourcePerspective"/>
+<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="com.android.ide.eclipse.ddms.views.LogCatView"/>
+<view id="com.android.ide.eclipse.ddms.views.ThreadView"/>
+<view id="com.android.ide.eclipse.ddms.views.HeapView"/>
+<view id="com.android.ide.eclipse.ddms.views.AllocTrackerView"/>
+<view id="com.android.ide.eclipse.ddms.views.FileExplorerView"/>
+<fastViewBars>
+<fastViewBar fastViewLocation="16384" id="emulator" orientation="256" selectedTabId="com.android.ide.eclipse.ddms.views.EmulatorControlView" style="0">
+<fastViews>
+<view id="com.android.ide.eclipse.ddms.views.EmulatorControlView" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="16384" id="devices" orientation="256" selectedTabId="com.android.ide.eclipse.ddms.views.DeviceView" style="0">
+<fastViews>
+<view id="com.android.ide.eclipse.ddms.views.DeviceView" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
+<layout>
+<mainWindow>
+<info folder="true" part="devices">
+<folder appearance="2" expanded="0">
+<page content="com.android.ide.eclipse.ddms.views.DeviceView:*" label="LabelNotFound"/>
+<page content="com.android.ide.eclipse.ddms.views.DeviceView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1307993" ratio="0.53954804" ratioLeft="382" ratioRight="326" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="stickyFolderRight" ratio="0.7496413" ratioLeft="1045" ratioRight="349" relationship="2" relative="devices">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info folder="true" part="logcat" ratio="0.5451977" ratioLeft="386" ratioRight="322" relationship="4" relative="devices">
 <folder activePageID="com.android.ide.eclipse.ddms.views.LogCatView" appearance="2" expanded="2">
 <page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LogCat"/>
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="com.android.ide.eclipse.ddms.views.LogCatView:*" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.2998565" ratioLeft="418" ratioRight="976" relationship="2" relative="devices"/>
+<info folder="true" part="ddms-detail" ratio="0.5" ratioLeft="488" ratioRight="488" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="com.android.ide.eclipse.ddms.views.ThreadView" appearance="2" expanded="2">
+<page content="com.android.ide.eclipse.ddms.views.ThreadView" label="Threads"/>
+<page content="com.android.ide.eclipse.ddms.views.HeapView" label="Heap"/>
+<page content="com.android.ide.eclipse.ddms.views.AllocTrackerView" label="Allocation Tracker"/>
+<page content="com.android.ide.eclipse.ddms.views.FileExplorerView" label="File Explorer"/>
+<page content="com.android.ide.eclipse.ddms.views.ThreadView:*" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
+<part id="2"/>
+<part id="3"/>
 </presentation>
+</folder>
+</info>
+<info folder="true" part="emulator" ratio="0.5" ratioLeft="284" ratioRight="284" relationship="4" relative="devices">
+<folder appearance="2" expanded="0">
+<page content="com.android.ide.eclipse.ddms.views.EmulatorControlView:*" label="LabelNotFound"/>
+<page content="com.android.ide.eclipse.ddms.views.EmulatorControlView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </mainWindow>
@@ -336,158 +417,154 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.menu.MenuEditor" path="/TimeTravel/res/menu/map_menu.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.resources.ResourcesEditor" path="/TimeTravel/res/values/strings.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TimeTravel/src/com/travel/activities/ImageViewActivity.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TimeTravel/src/com/travel/activities/MapViewActivity.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TimeTravel/src/com/travel/utils/CurrentLocation.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TrackMe/src/com/track/mylocation/MyLocation.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TimeTravel/src/com/travel/activities/PhotoCaptureActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TimeTravel/src/com/travel/activities/UploadDetailsActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TimeTravel/src/com/travel/services/TwitpicUpload.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TimeTravel/src/com/travel/utils/CurrentLocation.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/TimeTravel/AndroidManifest.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/TrackMe/src/com/track/mylocation/MyLocation.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/TrackMe/AndroidManifest.xml"/>
 </editors>
-<item historyLabel="map_menu.xml" index="0"/>
-<item historyLabel="ImageViewActivity.java" index="2">
-<position info="not_deleted" x="3806" y="0"/>
-</item>
-<item historyLabel="ImageViewActivity.java" index="2">
-<position info="not_deleted" x="4251" y="0"/>
-</item>
-<item historyLabel="MapViewActivity.java" index="3">
-<position info="not_deleted" x="3261" y="0"/>
-</item>
-<item historyLabel="CurrentLocation.java" index="4">
-<position info="not_deleted" x="3043" y="24"/>
-</item>
-<item historyLabel="CurrentLocation.java" index="4">
-<position info="not_deleted" x="3541" y="0"/>
-</item>
-<item historyLabel="CurrentLocation.java" index="4">
-<position info="not_deleted" x="3563" y="0"/>
-</item>
-<item historyLabel="CurrentLocation.java" index="4">
-<position info="not_deleted" x="3610" y="0"/>
-</item>
-<item historyLabel="MapViewActivity.java" index="3">
-<position info="not_deleted" x="1672" y="2"/>
-</item>
-<item historyLabel="CurrentLocation.java" index="4">
-<position info="not_deleted" x="3610" y="0"/>
-</item>
-<item historyLabel="CurrentLocation.java" index="4">
-<position info="not_deleted" x="4014" y="0"/>
-</item>
-<item historyLabel="CurrentLocation.java" index="4">
-<position info="not_deleted" x="4057" y="0"/>
-</item>
-<item historyLabel="CurrentLocation.java" index="4">
-<position info="not_deleted" x="4036" y="0"/>
-</item>
-<item historyLabel="MapViewActivity.java" index="3">
-<position info="not_deleted" x="1672" y="2"/>
-</item>
-<item historyLabel="MapViewActivity.java" index="3">
-<position info="not_deleted" x="1694" y="0"/>
-</item>
-<item historyLabel="MapViewActivity.java" index="3">
-<position/>
-</item>
-<item historyLabel="CurrentLocation.java" index="4">
-<position info="not_deleted" x="4036" y="0"/>
-</item>
-<item historyLabel="MapViewActivity.java" index="3">
-<position/>
-</item>
-<item historyLabel="MapViewActivity.java" index="3">
-<position info="not_deleted" x="2270" y="0"/>
-</item>
-<item historyLabel="MapViewActivity.java" index="3">
-<position info="not_deleted" x="1672" y="3"/>
-</item>
-<item historyLabel="MapViewActivity.java" index="3">
-<position info="not_deleted" x="2270" y="0"/>
-</item>
-<item historyLabel="CurrentLocation.java" index="4">
-<position info="not_deleted" x="4036" y="0"/>
-</item>
-<item historyLabel="MapViewActivity.java" index="3">
-<position info="not_deleted" x="2270" y="0"/>
-</item>
-<item historyLabel="ImageViewActivity.java" index="2">
-<position info="not_deleted" x="4251" y="0"/>
-</item>
-<item historyLabel="MapViewActivity.java" index="3">
-<position info="not_deleted" x="1156" y="0"/>
-</item>
-<item historyLabel="CurrentLocation.java" index="4">
-<position info="not_deleted" x="4036" y="0"/>
-</item>
-<item historyLabel="MapViewActivity.java" index="3">
-<position info="not_deleted" x="1156" y="0"/>
-</item>
-<item historyLabel="CurrentLocation.java" index="4">
-<position info="not_deleted" x="4036" y="0"/>
-</item>
-<item historyLabel="MapViewActivity.java" index="3">
-<position/>
-</item>
-<item historyLabel="CurrentLocation.java" index="4">
-<position info="not_deleted" x="4036" y="0"/>
-</item>
-<item historyLabel="MapViewActivity.java" index="3">
-<position info="not_deleted" x="2249" y="15"/>
-</item>
-<item historyLabel="CurrentLocation.java" index="4">
-<position info="not_deleted" x="4036" y="0"/>
-</item>
-<item historyLabel="CurrentLocation.java" index="4">
-<position info="not_deleted" x="3145" y="0"/>
-</item>
-<item historyLabel="CurrentLocation.java" index="4">
+<item historyLabel="CurrentLocation.java" index="3">
 <position info="not_deleted" x="389" y="19"/>
 </item>
-<item historyLabel="MapViewActivity.java" index="3">
+<item historyLabel="MapViewActivity.java" index="2">
 <position info="not_deleted" x="2249" y="15"/>
 </item>
-<item historyLabel="ImageViewActivity.java" index="2">
+<item historyLabel="ImageViewActivity.java" index="1">
 <position info="not_deleted" x="3184" y="20"/>
 </item>
-<item historyLabel="CurrentLocation.java" index="4">
+<item historyLabel="CurrentLocation.java" index="3">
 <position info="not_deleted" x="1259" y="17"/>
 </item>
-<item historyLabel="MapViewActivity.java" index="3">
+<item historyLabel="MapViewActivity.java" index="2">
 <position info="not_deleted" x="2238" y="1"/>
 </item>
-<item historyLabel="MyLocation.java" index="5">
+<item historyLabel="MyLocation.java" index="4">
 <position info="not_deleted" x="1810" y="67"/>
 </item>
-<item historyLabel="CurrentLocation.java" index="4">
+<item historyLabel="CurrentLocation.java" index="3">
 <position info="not_deleted" x="1259" y="17"/>
 </item>
-<item historyLabel="MapViewActivity.java" index="3">
+<item historyLabel="MapViewActivity.java" index="2">
 <position info="not_deleted" x="2238" y="1"/>
 </item>
-<item historyLabel="MapViewActivity.java" index="3">
+<item historyLabel="MapViewActivity.java" index="2">
 <position/>
 </item>
-<item historyLabel="MapViewActivity.java" index="3">
+<item historyLabel="MapViewActivity.java" index="2">
 <position info="not_deleted" x="641" y="0"/>
 </item>
-<item historyLabel="ImageViewActivity.java" index="2">
+<item historyLabel="ImageViewActivity.java" index="1">
 <position info="not_deleted" x="3184" y="20"/>
 </item>
-<item historyLabel="MapViewActivity.java" index="3">
+<item historyLabel="MapViewActivity.java" index="2">
 <position info="not_deleted" x="2089" y="0"/>
 </item>
-<item historyLabel="strings.xml" index="1"/>
-<item historyLabel="CurrentLocation.java" index="4">
+<item historyLabel="strings.xml" index="0"/>
+<item historyLabel="CurrentLocation.java" index="3">
 <position info="not_deleted" x="1259" y="17"/>
 </item>
-<item historyLabel="MapViewActivity.java" index="3">
+<item historyLabel="MapViewActivity.java" index="2">
 <position info="not_deleted" x="2089" y="0"/>
 </item>
-<item historyLabel="MapViewActivity.java" index="3">
+<item historyLabel="MapViewActivity.java" index="2">
 <position info="not_deleted" x="3687" y="0"/>
 </item>
-<item active="true" historyLabel="MyLocation.java" index="5">
-<position info="not_deleted" x="1810" y="67"/>
+<item historyLabel="MyLocation.java" index="4">
+<position info="not_deleted" x="1792" y="0"/>
+</item>
+<item historyLabel="PhotoCaptureActivity.java" index="5">
+<position info="not_deleted" x="4184" y="6"/>
+</item>
+<item historyLabel="UploadDetailsActivity.java" index="6">
+<position info="not_deleted" x="2256" y="21"/>
+</item>
+<item historyLabel="TwitpicUpload.java" index="7">
+<position info="not_deleted" x="1912" y="12"/>
+</item>
+<item historyLabel="UploadDetailsActivity.java" index="6">
+<position info="not_deleted" x="1578" y="6"/>
+</item>
+<item historyLabel="TwitpicUpload.java" index="7">
+<position info="not_deleted" x="751" y="14"/>
+</item>
+<item historyLabel="UploadDetailsActivity.java" index="6">
+<position info="not_deleted" x="1578" y="6"/>
+</item>
+<item historyLabel="TwitpicUpload.java" index="7">
+<position info="not_deleted" x="751" y="14"/>
+</item>
+<item historyLabel="UploadDetailsActivity.java" index="6">
+<position info="not_deleted" x="1578" y="6"/>
+</item>
+<item historyLabel="TwitpicUpload.java" index="7">
+<position info="not_deleted" x="751" y="14"/>
+</item>
+<item historyLabel="UploadDetailsActivity.java" index="6">
+<position info="not_deleted" x="3814" y="10"/>
+</item>
+<item historyLabel="TwitpicUpload.java" index="7">
+<position info="not_deleted" x="1876" y="0"/>
+</item>
+<item historyLabel="UploadDetailsActivity.java" index="6">
+<position info="not_deleted" x="2307" y="0"/>
+</item>
+<item historyLabel="CurrentLocation.java" index="8">
+<position info="not_deleted" x="553" y="0"/>
+</item>
+<item historyLabel="TimeTravel Manifest" index="9"/>
+<item historyLabel="CurrentLocation.java" index="8">
+<position info="not_deleted" x="2543" y="19"/>
+</item>
+<item historyLabel="TimeTravel Manifest" index="9"/>
+<item historyLabel="CurrentLocation.java" index="8">
+<position info="not_deleted" x="553" y="0"/>
+</item>
+<item historyLabel="UploadDetailsActivity.java" index="6">
+<position info="not_deleted" x="2307" y="0"/>
+</item>
+<item historyLabel="CurrentLocation.java" index="8">
+<position info="not_deleted" x="553" y="0"/>
+</item>
+<item historyLabel="TwitpicUpload.java" index="7">
+<position info="not_deleted" x="1876" y="0"/>
+</item>
+<item historyLabel="UploadDetailsActivity.java" index="6">
+<position info="not_deleted" x="2307" y="0"/>
+</item>
+<item historyLabel="CurrentLocation.java" index="8">
+<position info="not_deleted" x="553" y="0"/>
+</item>
+<item historyLabel="TimeTravel Manifest" index="9"/>
+<item historyLabel="MyLocation.java" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="CurrentLocation.java" index="8">
+<position info="not_deleted" x="553" y="0"/>
+</item>
+<item historyLabel="TrackMe Manifest" index="11"/>
+<item historyLabel="TimeTravel Manifest" index="9"/>
+<item historyLabel="TrackMe Manifest" index="11"/>
+<item historyLabel="CurrentLocation.java" index="8">
+<position info="not_deleted" x="553" y="0"/>
+</item>
+<item historyLabel="MyLocation.java" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="CurrentLocation.java" index="8">
+<position info="not_deleted" x="228" y="3860"/>
+</item>
+<item historyLabel="MyLocation.java" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="MyLocation.java" index="10">
+<position info="not_deleted" x="1342" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -495,6 +572,11 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="left"/>
+<trimItem IMemento.internal.id="devices"/>
+<trimItem IMemento.internal.id="emulator"/>
+</trimArea>
 <trimArea IMemento.internal.id="131072">
 <trimItem IMemento.internal.id="right"/>
 </trimArea>
@@ -507,15 +589,28 @@
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
 <trimItem IMemento.internal.id="bottom"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@1307993"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="TrackMe/AndroidManifest.xml">
+<persistable path="/TrackMe/AndroidManifest.xml"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MyLocation.java" tooltip="TrackMe/src/com/track/mylocation/MyLocation.java">
 <persistable path="/TrackMe/src/com/track/mylocation/MyLocation.java"/>
 </file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="TimeTravel/AndroidManifest.xml">
+<persistable path="/TimeTravel/AndroidManifest.xml"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CurrentLocation.java" tooltip="TimeTravel/src/com/travel/utils/CurrentLocation.java">
 <persistable path="/TimeTravel/src/com/travel/utils/CurrentLocation.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TwitpicUpload.java" tooltip="TimeTravel/src/com/travel/services/TwitpicUpload.java">
+<persistable path="/TimeTravel/src/com/travel/services/TwitpicUpload.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UploadDetailsActivity.java" tooltip="TimeTravel/src/com/travel/activities/UploadDetailsActivity.java">
+<persistable path="/TimeTravel/src/com/travel/activities/UploadDetailsActivity.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MapViewActivity.java" tooltip="TimeTravel/src/com/travel/activities/MapViewActivity.java">
 <persistable path="/TimeTravel/src/com/travel/activities/MapViewActivity.java"/>
@@ -543,18 +638,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="upload_details.xml" tooltip="TimeTravel/res/layout/upload_details.xml">
 <persistable path="/TimeTravel/res/layout/upload_details.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="TimeTravel/AndroidManifest.xml">
-<persistable path="/TimeTravel/AndroidManifest.xml"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Camera.class" tooltip="android.hardware.Camera">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=TimeTravel/\/home\/ykkuumar\/android\/android-sdk-linux_86\/platforms\/android-7\/android.jar&lt;android.hardware(Camera.class"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="photo_capture.xml" tooltip="TimeTravel/res/layout/photo_capture.xml">
-<persistable path="/TimeTravel/res/layout/photo_capture.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="R.java" tooltip="TimeTravel/gen/com/travel/activities/R.java">
-<persistable path="/TimeTravel/gen/com/travel/activities/R.java"/>
 </file>
 </mruList>
 </workbench>

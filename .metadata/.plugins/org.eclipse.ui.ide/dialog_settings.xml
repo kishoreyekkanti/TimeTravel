@@ -5,33 +5,33 @@
 		<item value="410" key="DIALOG_X_ORIGIN"/>
 	</section>
 	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
-		<item value="false" key="ShowDerived"/>
 		<item value="true" key="ShowStatusLine"/>
+		<item value="false" key="ShowDerived"/>
 		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;" key="WorkingSet"/>
-		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode path=&quot;/TimeTravel/src/com/travel/activities/ImageViewActivity.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/TimeTravel/src/com/travel/activities/PhotoCaptureActivity.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/TimeTravel/src/com/travel/activities/UploadDetailsActivity.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/TimeTravel/res/values/strings.xml&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/TimeTravel/AndroidManifest.xml&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/TimeTravel/src/com/travel/activities/MapViewActivity.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/TimeTravel/res/layout/map_view.xml&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/TimeTravel/res/layout/image_view.xml&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/TimeTravel/src/com/travel/activities/PanoramaTabWidget.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/TimeTravelTest/res/values/strings.xml&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;" key="History"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode path=&quot;/TimeTravel/src/com/travel/activities/ImageViewActivity.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/TimeTravel/src/com/travel/activities/PhotoCaptureActivity.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/TimeTravel/src/com/travel/activities/UploadDetailsActivity.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/TimeTravel/res/values/strings.xml&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/TimeTravel/AndroidManifest.xml&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/TimeTravel/src/com/travel/activities/MapViewActivity.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/TimeTravel/res/layout/map_view.xml&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/TimeTravel/res/layout/image_view.xml&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/TimeTravel/src/com/travel/activities/PanoramaTabWidget.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/TimeTravelTest/res/values/strings.xml&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/TimeTravel/src/com/travel/services/TwitpicUpload.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;" key="History"/>
 		<section name="DialogBoundsSettings">
 			<item value="600" key="DIALOG_WIDTH"/>
 			<item value="95" key="DIALOG_Y_ORIGIN"/>
-			<item value="421" key="DIALOG_X_ORIGIN"/>
 			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="421" key="DIALOG_X_ORIGIN"/>
 			<item value="1|Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 		</section>
-	</section>
-	<section name="WORKBENCH_SETTINGS">
-		<list key="ENABLED_TRANSFERS">
-		</list>
 	</section>
 	<section name="ExternalProjectImportWizard">
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+	<section name="NewWizardAction">
+	</section>
 	<section name="CleanDialogSettings">
 		<item value="565" key="DIALOG_WIDTH"/>
 		<item value="192" key="DIALOG_Y_ORIGIN"/>
-		<item value="439" key="DIALOG_X_ORIGIN"/>
 		<item value="391" key="DIALOG_HEIGHT"/>
+		<item value="439" key="DIALOG_X_ORIGIN"/>
 		<item value="false" key="TOGGLE_SELECTED"/>
-	</section>
-	<section name="NewWizardAction">
 	</section>
 </section>
