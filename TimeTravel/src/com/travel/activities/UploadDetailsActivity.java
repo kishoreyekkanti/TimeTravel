@@ -37,6 +37,7 @@ public class UploadDetailsActivity extends Activity{
 		Log.d("UploadDetailsActivity","Stareted uploaded details activiy");
 		super.onCreate(savedInstanceState);
 		imagePath = getIntent().getStringExtra(PhotoCaptureActivity.IMAGE_PATH);
+		Log.d("UploadDetailsActivity","Image Path::"+imagePath);
 		setContentView(R.layout.upload_details);
 		twitPicUpload = new TwitpicUpload(this);
 		description = (EditText)findViewById(R.id.description);
