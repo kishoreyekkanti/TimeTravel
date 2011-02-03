@@ -12,8 +12,7 @@ public class PhotoCaptureActivityTest extends
 	public PhotoCaptureActivity mActivity;
 
 	public PhotoCaptureActivityTest(String name) {
-		super("com.travel.activities.PhotoCatpureActivity",
-				PhotoCaptureActivity.class);
+		super("com.travel.activities", PhotoCaptureActivity.class);
 		setName(name);
 	}
 
@@ -36,9 +35,7 @@ public class PhotoCaptureActivityTest extends
 
 	public void testActivityLaunchesThePhotoCaptureScreen() {
 		mActivity = this.getActivity();
-		SurfaceView preview = (SurfaceView) mActivity
-				.findViewById(com.travel.activities.R.id.camera_preview);
-		assertNotNull(preview);
+		solo.getButton("Start Camera");
 	}
 	
 }

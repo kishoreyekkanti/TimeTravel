@@ -18,7 +18,7 @@ public class UserPreferenceActivityTest extends
 	public UserPreferenceActivity mActivity;
 
 	public UserPreferenceActivityTest(String name) {
-		super("com.travel.activities.UserPreferenceActivity",UserPreferenceActivity.class);
+		super("com.travel.activities",UserPreferenceActivity.class);
 		setName(name);
 	}
 	
@@ -41,7 +41,7 @@ public class UserPreferenceActivityTest extends
 	
 	public void testUserSettingsUI(){
 		String acitivityName = solo.getCurrentActivity().getClass().getSimpleName();
-		solo.assertCurrentActivity("Expected Photo Capture activity", acitivityName);
+		solo.assertCurrentActivity("Expected User settings Activity", acitivityName);
 		solo.clickOnMenuItem("Username");
 		solo.clearEditText(0);
 		solo.enterText(0, "testtimetravel");

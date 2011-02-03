@@ -11,7 +11,7 @@ public class PanoramaTabWidgetTest extends ActivityInstrumentationTestCase2<Pano
 	private Solo solo;
 	public PanoramaTabWidget mActivity;
 	public PanoramaTabWidgetTest(String name){
-		super("com.travel.activities.PanoramaTabWidget",PanoramaTabWidget.class);
+		super("com.travel.activities",PanoramaTabWidget.class);
 		setName(name);
 	}
 
@@ -64,12 +64,6 @@ public class PanoramaTabWidgetTest extends ActivityInstrumentationTestCase2<Pano
             }
         });
 		Thread.sleep(500);
-		PhotoCaptureActivity photoCaptureActivity = (PhotoCaptureActivity)solo.getCurrentActivity();
-		solo.clickOnView(photoCaptureActivity.findViewById(com.travel.activities.R.id.camera_preview));
-		Thread.sleep(500);
-		solo.enterText(0, "uploading for testing");
-		solo.clickOnButton("Upload");
-
-		
+		solo.getButton("Start Camera");
 	}
 }
