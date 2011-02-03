@@ -4,6 +4,7 @@ import java.io.File;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
@@ -52,7 +53,7 @@ public class TwitpicUpload {
 			// If we got a response back, print out response variables
 			if (tpResponse != null) {
 				tpResponse.dumpVars();
-				//Log.d("Twitpic response", tpResponse.getMediaUrl());
+				Log.d("Twitpic response", tpResponse.getMediaUrl());
 				return tpResponse.getMediaAid();
 			}
 		}

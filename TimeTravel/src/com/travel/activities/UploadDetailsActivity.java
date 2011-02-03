@@ -15,9 +15,12 @@ import org.apache.http.protocol.HTTP;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
 import android.location.Location;
 import android.location.LocationManager;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -28,7 +31,7 @@ import com.travel.services.TwitpicUpload;
 import com.travel.utils.CurrentLocation;
 
 public class UploadDetailsActivity extends Activity{
-	private String imagePath;
+	private String imageUriPath;
 	private EditText description;
 	TwitpicUpload twitPicUpload;
 	LocationManager locationManager;
@@ -36,8 +39,8 @@ public class UploadDetailsActivity extends Activity{
 	public void onCreate(Bundle savedInstanceState){
 		Log.d("UploadDetailsActivity","Stareted uploaded details activiy");
 		super.onCreate(savedInstanceState);
-		imagePath = getIntent().getStringExtra(PhotoCaptureActivity.IMAGE_PATH);
-		Log.d("UploadDetailsActivity","Image Path::"+imagePath);
+		imageUriPath = getIntent().getStringExtra(PhotoCaptureActivity.IMAGE_PATH);
+		Log.d("UploadDetailsActivity","Image Path::"+imageUriPath);
 		setContentView(R.layout.upload_details);
 		twitPicUpload = new TwitpicUpload(this);
 		description = (EditText)findViewById(R.id.description);
@@ -69,7 +72,14 @@ public class UploadDetailsActivity extends Activity{
 	private void triggerUpload(){
 		Log.i("UploadDetailsActivity","Uploading the photo!");
 			try {
-				String twitpic_url = twitPicUpload.uploadImageFor(imagePath, description.getText().toString());
+				Uri imageUri = Uri.parse(imageUriPath);
+				String[] projection = {MediaStore.Images.Media.DATA};
+				Cursor imageCursor =  managedQuery(imageUri, projection, null, null, null);
+				int index = imageCursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA); 
+				imageCursor.moveToFirst();
+				String image_path = imageCursor.getString(index);
+				Log.e("Upload Details Activity",image_path);
+				String twitpic_url = twitPicUpload.uploadImageFor(image_path, description.getText().toString());
 		         // prepare post method  
 		         HttpPost post = new HttpPost(getString(R.string.webservice_url_post));  
 		   
