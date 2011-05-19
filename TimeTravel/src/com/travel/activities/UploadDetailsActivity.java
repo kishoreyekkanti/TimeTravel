@@ -1,17 +1,5 @@
 package com.travel.activities;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.apache.http.HttpResponse;
-import org.apache.http.NameValuePair;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.message.BasicNameValuePair;
-import org.apache.http.protocol.HTTP;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -26,21 +14,32 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
-
 import com.travel.services.TwitpicUpload;
 import com.travel.utils.CurrentLocation;
+import org.apache.http.HttpResponse;
+import org.apache.http.NameValuePair;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.protocol.HTTP;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class UploadDetailsActivity extends Activity{
-	private String imageUriPath;
+
+    private String imageUriPath;
 	private EditText description;
 	TwitpicUpload twitPicUpload;
 	LocationManager locationManager;
 	Location lastBestKnownLocation;
-	public void onCreate(Bundle savedInstanceState){
+
+    public void onCreate(Bundle savedInstanceState){
 		Log.d("UploadDetailsActivity","Stareted uploaded details activiy");
 		super.onCreate(savedInstanceState);
 		imageUriPath = getIntent().getStringExtra(PhotoCaptureActivity.IMAGE_PATH);
-		Log.d("UploadDetailsActivity","Image Path::"+imageUriPath);
 		setContentView(R.layout.upload_details);
 		twitPicUpload = new TwitpicUpload(this);
 		description = (EditText)findViewById(R.id.description);
@@ -81,7 +80,7 @@ public class UploadDetailsActivity extends Activity{
 				Log.e("Upload Details Activity",image_path);
 				String twitpic_url = twitPicUpload.uploadImageFor(image_path, description.getText().toString());
 		         // prepare post method  
-		         HttpPost post = new HttpPost(getString(R.string.webservice_url_post));  
+		         HttpPost httpPost = new HttpPost(getString(R.string.webservice_url_post));
 		   
 		         // add parameters to the post method  
 		         List <NameValuePair> parameters = new ArrayList <NameValuePair>();  
@@ -91,11 +90,11 @@ public class UploadDetailsActivity extends Activity{
 		         parameters.add(new BasicNameValuePair("longitude", lastBestKnownLocation!=null?String.valueOf(lastBestKnownLocation.getLongitude()):"-122.084095"));
 		   
 		         UrlEncodedFormEntity sendentity = new UrlEncodedFormEntity(parameters, HTTP.UTF_8);  
-		         post.setEntity(sendentity);   
+		         httpPost.setEntity(sendentity);
 		   
 		         // create the client and execute the post method  
 		         HttpClient client = new DefaultHttpClient();  
-		         HttpResponse wsResponse = client.execute(post);  
+		         HttpResponse wsResponse = client.execute(httpPost);
 		   
 		         // retrieve the output and display it in console  
 		         client.getConnectionManager().shutdown();				

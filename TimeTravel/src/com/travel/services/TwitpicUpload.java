@@ -53,7 +53,6 @@ public class TwitpicUpload {
 			// If we got a response back, print out response variables
 			if (tpResponse != null) {
 				tpResponse.dumpVars();
-				Log.d("Twitpic response", tpResponse.getMediaUrl());
 				return tpResponse.getMediaAid();
 			}
 		}

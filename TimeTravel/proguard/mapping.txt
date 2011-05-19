@@ -1,0 +1,175 @@
+com.harrison.lee.twitpic4j.ClientHttpRequest -> com.a.a.a.c:
+    java.net.URLConnection connection -> a
+    java.io.OutputStream os -> b
+    java.util.Map cookies -> c
+    java.util.Random random -> d
+    java.lang.String boundary -> e
+    void connect() -> b
+    void write$132fa8() -> c
+    void write(java.lang.String) -> a
+    void newline() -> d
+    void writeln(java.lang.String) -> b
+    java.lang.String randomString() -> e
+    void boundary() -> f
+    void writeName(java.lang.String) -> c
+    void setParameter(java.lang.String,java.lang.String) -> a
+    void setParameter(java.lang.String,java.lang.String,java.io.InputStream) -> a
+    void setParameter(java.lang.String,java.io.File) -> a
+    java.io.InputStream post() -> a
+com.harrison.lee.twitpic4j.ResponseXMLParser -> com.a.a.a.b:
+    com.harrison.lee.twitpic4j.TwitPicResponse mResponse -> a
+    java.io.InputStream mInputStream -> b
+    boolean mIsStartElem -> c
+    java.util.List mTags -> d
+    int mLevel -> e
+    com.harrison.lee.twitpic4j.TwitPicResponse parseResponse() -> a
+    void startElement(java.lang.String,java.lang.String,java.lang.String,org.xml.sax.Attributes) -> startElement
+    void endElement(java.lang.String,java.lang.String,java.lang.String) -> endElement
+    void characters(char[],int,int) -> characters
+com.harrison.lee.twitpic4j.TwitPic -> com.a.a.a.d:
+    java.lang.String mUsername -> a
+    java.lang.String mPassword -> b
+    com.harrison.lee.twitpic4j.ClientHttpRequest mRequest -> c
+    com.harrison.lee.twitpic4j.TwitPicResponse mResponse -> d
+    void setUserParameters() -> a
+    com.harrison.lee.twitpic4j.TwitPicResponse upload(java.io.File) -> a
+    com.harrison.lee.twitpic4j.TwitPicResponse uploadAndPost(java.io.File,java.lang.String) -> a
+    void handleErrorMessage(int) -> a
+com.harrison.lee.twitpic4j.TwitPicResponse -> com.a.a.a.a:
+    java.lang.String mStatus -> a
+    java.lang.String mStatusId -> b
+    java.lang.String mUserId -> c
+    java.lang.String mMediaAid -> d
+    java.lang.String mMediaUrl -> e
+    java.lang.String mErrorCode -> f
+    java.lang.String mErrorMessage -> g
+    void dumpVars() -> a
+    void setStatus(java.lang.String) -> a
+    void setStatusId(java.lang.String) -> b
+    void setUserId(java.lang.String) -> c
+    java.lang.String getMediaAid() -> b
+    void setMediaAid(java.lang.String) -> d
+    java.lang.String getMediaUrl() -> c
+    void setMediaUrl(java.lang.String) -> e
+    java.lang.String getErrorCode() -> d
+    void setErrorCode(java.lang.String) -> f
+    void setErrorMessage(java.lang.String) -> g
+com.harrison.lee.twitpic4j.exception.ImageNotFoundException -> com.a.a.a.a.c:
+com.harrison.lee.twitpic4j.exception.ImageTooLargeException -> com.a.a.a.a.a:
+com.harrison.lee.twitpic4j.exception.InvalidImageTypeException -> com.a.a.a.a.d:
+com.harrison.lee.twitpic4j.exception.InvalidUsernameOrPasswordException -> com.a.a.a.a.b:
+com.harrison.lee.twitpic4j.exception.TwitPicException -> com.a.a.a.a.e:
+com.travel.activities.ImageViewActivity -> com.travel.activities.ImageViewActivity:
+    android.location.LocationManager locationManager -> f
+    android.content.SharedPreferences preferences -> g
+    java.lang.String[] remoteImageURLs -> a
+    org.json.JSONArray jsonArray -> b
+    android.widget.Gallery gallery -> c
+    android.content.Context imageViewContext -> d
+    android.app.ProgressDialog mProgressDialog -> e
+    android.location.Location lastBestKnownLocation -> h
+    java.lang.String latitudeView -> i
+    java.lang.String longitudeView -> j
+    android.widget.TextView imageDescription -> k
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    org.json.JSONArray getJson(java.lang.String) -> a
+    java.lang.String[] extractRemoteImageURLs(org.json.JSONArray) -> b
+    org.json.JSONArray access$0(com.travel.activities.ImageViewActivity,java.lang.String) -> a
+    java.lang.String[] access$1$4863d101(org.json.JSONArray) -> a
+    void access$2(com.travel.activities.ImageViewActivity,org.json.JSONArray,int) -> a
+    void access$3(com.travel.activities.ImageViewActivity,org.json.JSONArray,int) -> b
+com.travel.activities.ImageViewActivity$ImageAdapter -> com.travel.activities.a:
+    android.content.Context context -> a
+    int itemBackground -> b
+    java.lang.String[] myRemoteImages -> c
+    com.travel.activities.ImageViewActivity this$0 -> d
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+com.travel.activities.ImageViewActivity$JSONTask -> com.travel.activities.g:
+    com.travel.activities.ImageViewActivity this$0 -> a
+    void onPreExecute() -> onPreExecute
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.travel.activities.ImageViewActivity$JSONTask$1 -> com.travel.activities.c:
+    com.travel.activities.ImageViewActivity$JSONTask this$1 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+com.travel.activities.MapViewActivity -> com.travel.activities.MapViewActivity:
+    com.google.android.maps.GeoPoint geopoint -> a
+    com.google.android.maps.GeoPoint currentGeoPoint -> b
+    com.google.android.maps.MapController controller -> c
+    android.location.Location lastBestKnownLocation -> d
+    android.location.LocationManager locationManager -> e
+    java.lang.String message -> f
+    android.content.res.Resources resources -> g
+    com.google.android.maps.MapView mapView -> h
+    android.widget.TextView distance -> i
+    com.travel.utils.ImageLocationOverlay imageItemOverlay -> j
+    boolean isRouteDisplayed() -> isRouteDisplayed
+    void onCreate(android.os.Bundle) -> onCreate
+com.travel.activities.PanoramaTabWidget -> com.travel.activities.PanoramaTabWidget:
+    void onCreate(android.os.Bundle) -> onCreate
+com.travel.activities.PhotoCaptureActivity -> com.travel.activities.PhotoCaptureActivity:
+    android.widget.ImageView imageView -> b
+    java.lang.String SD_CARD_TEMP_DIR -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    android.widget.ImageView access$0(com.travel.activities.PhotoCaptureActivity) -> a
+com.travel.activities.PhotoCaptureActivity$1 -> com.travel.activities.e:
+    com.travel.activities.PhotoCaptureActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.travel.activities.PhotoCaptureActivity$2 -> com.travel.activities.d:
+    com.travel.activities.PhotoCaptureActivity this$0 -> a
+    void run() -> run
+com.travel.activities.R -> com.travel.activities.f:
+com.travel.activities.R$styleable -> com.travel.activities.i:
+    int[] Gallery1 -> a
+com.travel.activities.UploadDetailsActivity -> com.travel.activities.UploadDetailsActivity:
+    java.lang.String imageUriPath -> a
+    android.widget.EditText description -> b
+    com.travel.services.TwitpicUpload twitPicUpload -> c
+    android.location.LocationManager locationManager -> d
+    android.location.Location lastBestKnownLocation -> e
+    void onCreate(android.os.Bundle) -> onCreate
+    void access$0(com.travel.activities.UploadDetailsActivity) -> a
+com.travel.activities.UploadDetailsActivity$1 -> com.travel.activities.b:
+    com.travel.activities.UploadDetailsActivity this$0 -> a
+    void onClick(android.view.View) -> onClick
+com.travel.activities.UploadDetailsActivity$1$1 -> com.travel.activities.h:
+    com.travel.activities.UploadDetailsActivity$1 this$1 -> a
+    void run() -> run
+com.travel.activities.UserPreferenceActivity -> com.travel.activities.UserPreferenceActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+com.travel.services.TwitpicUpload -> com.travel.b.a:
+    java.lang.String username -> a
+    java.lang.String password -> b
+    boolean includeTweet -> c
+    java.lang.String uploadImageFor(java.lang.String,java.lang.String) -> a
+com.travel.utils.CurrentLocation -> com.travel.a.a:
+    android.location.LocationManager locationManager -> a
+    void setLocationProvider(android.location.LocationManager) -> a
+    boolean isGPSSupported() -> b
+    boolean isNetworkSupported() -> c
+    android.location.Location getBestLastKnownLocation() -> a
+com.travel.utils.CurrentLocation$GPSLocationListener -> com.travel.a.d:
+    com.travel.utils.CurrentLocation this$0 -> a
+    void onLocationChanged(android.location.Location) -> onLocationChanged
+    void onProviderDisabled(java.lang.String) -> onProviderDisabled
+    void onProviderEnabled(java.lang.String) -> onProviderEnabled
+    void onStatusChanged(java.lang.String,int,android.os.Bundle) -> onStatusChanged
+com.travel.utils.CurrentLocation$NetworkLocaitonListener -> com.travel.a.c:
+    com.travel.utils.CurrentLocation this$0 -> a
+    void onLocationChanged(android.location.Location) -> onLocationChanged
+    void onProviderDisabled(java.lang.String) -> onProviderDisabled
+    void onProviderEnabled(java.lang.String) -> onProviderEnabled
+    void onStatusChanged(java.lang.String,int,android.os.Bundle) -> onStatusChanged
+com.travel.utils.ImageLocationOverlay -> com.travel.a.b:
+    android.content.Context context -> a
+    java.util.ArrayList items -> b
+    void addOverlayItem(com.google.android.maps.OverlayItem) -> a
+    com.google.android.maps.OverlayItem createItem(int) -> createItem
+    int size() -> size
+    boolean onTap(int) -> onTap

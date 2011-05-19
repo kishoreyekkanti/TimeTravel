@@ -1,21 +1,5 @@
 package com.travel.activities;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.URL;
-import java.net.URLConnection;
-
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -35,16 +19,28 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.View.OnClickListener;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
-import android.widget.Button;
 import android.widget.Gallery;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.AdapterView.OnItemClickListener;
-
 import com.travel.utils.CurrentLocation;
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.net.URLConnection;
 
 public class ImageViewActivity extends Activity {
 	LocationManager locationManager;
@@ -188,12 +184,7 @@ public class ImageViewActivity extends Activity {
 			jArray = new JSONArray(finalJsonString.toString());
 			for (int i = 0; i < jArray.length(); i++) {
 				JSONObject jsonData = jArray.getJSONObject(i);
-				Log.d("url", jsonData.getString("url"));
-				Log.d("latitude", String
-						.valueOf(jsonData.getDouble("latitude")));
-				Log.d("longitude", String.valueOf(jsonData
-						.getDouble("longitude")));
-				Log.d("description", jsonData.getString("description"));
+                logJSONData(jsonData);
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -202,13 +193,22 @@ public class ImageViewActivity extends Activity {
 		return jArray;
 	}
 
-	private  String getUrlForCriteria(String getUrl) {
+    private void logJSONData(JSONObject jsonData) throws JSONException {
+        Log.d("url", jsonData.getString("url"));
+        Log.d("latitude", String
+                .valueOf(jsonData.getDouble("latitude")));
+        Log.d("longitude", String.valueOf(jsonData
+                .getDouble("longitude")));
+        Log.d("description", jsonData.getString("description"));
+    }
+
+    private  String getUrlForCriteria(String getUrl) {
 		StringBuilder remoteServiceUrl = new StringBuilder(getUrl);
 		remoteServiceUrl.append("?").append(
 				"latitude=" + (lastBestKnownLocation!=null?String.valueOf(lastBestKnownLocation.getLatitude()):"37.422006") + "&").append(
 				"longitude=" + (lastBestKnownLocation!=null?String.valueOf(lastBestKnownLocation.getLongitude()):"-122.084095") + "&").append(
-				"staleness=" + preferences.getInt("staleness", 1) + "&")
-				.append("radius=" + preferences.getInt("radius", 1));
+				"staleness=" + preferences.getString("staleness", "1") + "&")
+				.append("radius=" + preferences.getString("radius", "1"));
 		return remoteServiceUrl.toString();
 	}
 

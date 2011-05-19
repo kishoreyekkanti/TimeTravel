@@ -1,0 +1,77 @@
+com.harrison.lee.twitpic4j.ClientHttpRequest:
+    128:129:public ClientHttpRequest(java.lang.String)
+    133:147:private void postCookies()
+    160:161:public void setCookie(java.lang.String,java.lang.String)
+    172:175:public void setCookies(java.util.Map)
+    186:191:public void setCookies(java.lang.String[])
+    284:286:public void setParameter(java.lang.String,byte[])
+    301:306:public void setParameter(java.lang.String,java.lang.Object)
+    319:325:public void setParameters(java.util.Map)
+    338:343:public void setParameters(java.lang.Object[])
+    371:372:public java.io.InputStream post(java.util.Map)
+    387:388:public java.io.InputStream post(java.lang.Object[])
+    407:409:public java.io.InputStream post(java.util.Map,java.util.Map)
+    428:430:public java.io.InputStream post(java.lang.String[],java.lang.Object[])
+    445:446:public java.io.InputStream post(java.lang.String,java.lang.Object)
+    466:467:public java.io.InputStream post(java.lang.String,java.lang.Object,java.lang.String,java.lang.Object)
+    491:492:public java.io.InputStream post(java.lang.String,java.lang.Object,java.lang.String,java.lang.Object,java.lang.String,java.lang.Object)
+    521:522:public java.io.InputStream post(java.lang.String,java.lang.Object,java.lang.String,java.lang.Object,java.lang.String,java.lang.Object,java.lang.String,java.lang.Object)
+    537:537:public static java.io.InputStream post(java.net.URL,java.util.Map)
+    552:552:public static java.io.InputStream post(java.net.URL,java.lang.Object[])
+    570:570:public static java.io.InputStream post(java.net.URL,java.util.Map,java.util.Map)
+    588:588:public static java.io.InputStream post(java.net.URL,java.lang.String[],java.lang.Object[])
+    604:604:public static java.io.InputStream post(java.net.URL,java.lang.String,java.lang.Object)
+    624:624:public static java.io.InputStream post(java.net.URL,java.lang.String,java.lang.Object,java.lang.String,java.lang.Object)
+    649:649:public static java.io.InputStream post(java.net.URL,java.lang.String,java.lang.Object,java.lang.String,java.lang.Object,java.lang.String,java.lang.Object)
+    679:679:public static java.io.InputStream post(java.net.URL,java.lang.String,java.lang.Object,java.lang.String,java.lang.Object,java.lang.String,java.lang.Object,java.lang.String,java.lang.Object)
+com.harrison.lee.twitpic4j.TwitPic:
+    public static final java.lang.String PARAM_USERNAME
+    public static final java.lang.String PARAM_PASSWORD
+    public static final java.lang.String PARAM_MEDIA
+    public static final java.lang.String PARAM_MESSAGE
+    public static final java.lang.String UPLOAD_URL
+    public static final java.lang.String UPLOAD_AND_POST_URL
+    123:139:public com.harrison.lee.twitpic4j.TwitPicResponse upload(byte[])
+    197:217:public com.harrison.lee.twitpic4j.TwitPicResponse uploadAndPost(byte[],java.lang.String)
+    245:245:public java.lang.String getUsername()
+    249:250:public void setUsername(java.lang.String)
+    253:253:public java.lang.String getPassword()
+    257:258:public void setPassword(java.lang.String)
+com.harrison.lee.twitpic4j.TwitPicResponse:
+    72:72:public java.lang.String getStatus()
+    80:80:public java.lang.String getStatusId()
+    88:88:public java.lang.String getUserId()
+    120:120:public java.lang.String getErrorMessage()
+com.harrison.lee.twitpic4j.exception.ImageNotFoundException:
+    private static final long serialVersionUID
+com.harrison.lee.twitpic4j.exception.ImageTooLargeException:
+    private static final long serialVersionUID
+com.harrison.lee.twitpic4j.exception.InvalidImageTypeException:
+    private static final long serialVersionUID
+com.harrison.lee.twitpic4j.exception.InvalidUsernameOrPasswordException:
+    private static final long serialVersionUID
+com.harrison.lee.twitpic4j.exception.TwitPicException:
+    public static final int ERROR_INVALID_USER_OR_PASS
+    public static final int ERROR_IMAGE_NOT_FOUND
+    public static final int ERROR_INVALID_IMAGE_TYPE
+    public static final int ERROR_IMAGE_TOO_LARGE
+    private static final long serialVersionUID
+com.travel.activities.ImageViewActivity:
+    private static final java.lang.String JPG
+    private static final java.lang.String TWITPIC_BASE_URL
+com.travel.activities.ImageViewActivity$ImageAdapter:
+    303:303:public float getScale(boolean,int)
+com.travel.activities.PhotoCaptureActivity:
+    protected static final java.lang.String IMAGE_PATH
+    private static final int IMAGE_CAPTURE
+com.travel.activities.R$attr
+com.travel.activities.R$drawable
+com.travel.activities.R$id
+com.travel.activities.R$layout
+com.travel.activities.R$menu
+com.travel.activities.R$string
+com.travel.activities.R$style
+com.travel.activities.R$styleable:
+    public static final int Gallery1_android_galleryItemBackground
+com.travel.activities.R$xml
+com.travel.utils.SeekBarPreference

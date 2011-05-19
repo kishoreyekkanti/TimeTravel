@@ -6,16 +6,23 @@
 			android:title="Username" android:key="username" />
 		<EditTextPreference android:name="Password for Twitter"
 			android:summary="Set password for your twitter account"
-			android:title="Password" android:key="password"
-			android:inputType="textPassword" />
+			android:title="Password" android:key="password" android:inputType="textPassword" />
 		<CheckBoxPreference android:key="tweet_always"
 			android:title="Tweet about image uploaded" android:defaultValue="false"
 			android:summary="Do you want to always tweet about your images?" />
-		<com.travel.utils.SeekBarPreference
-			android:summary="Select the radius(km) in which you want to fetch images."
-			android:key="radius" android:defaultValue="1" android:title="Radius(km) " />
-		<com.travel.utils.SeekBarPreference
-			android:summary="Select the radius(km) in which you want to fetch images."
-			android:key="staleness" android:defaultValue="1" android:title="Before days? " />
+			
+		<EditTextPreference android:name="Radius"
+			android:summary="Radius(km) in which you want to fetch images."
+			android:title="Radius(km)" android:key="radius" android:defaultValue="2"/>
+		<EditTextPreference android:name="Staleness"
+			android:summary="Staleness in number of days before image is captured"
+			android:title="Before days?" android:key="staleness" android:defaultValue="2"/>
+
+<!--		<com.travel.utils.SeekBarPreference-->
+<!--			android:summary="Select the radius(km) in which you want to fetch images."-->
+<!--			android:key="radius" android:defaultValue="1" android:title="Radius(km) " />-->
+<!--		<com.travel.utils.SeekBarPreference-->
+<!--			android:summary="Select the radius(km) in which you want to fetch images."-->
+<!--			android:key="staleness" android:defaultValue="1" android:title="Before days? " />-->
 	</PreferenceCategory>
 </PreferenceScreen>

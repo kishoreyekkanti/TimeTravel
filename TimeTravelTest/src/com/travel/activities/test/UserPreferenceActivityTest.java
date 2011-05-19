@@ -45,11 +45,7 @@ public class UserPreferenceActivityTest extends
 		solo.clickOnMenuItem("Username");
 		solo.clearEditText(0);
 		solo.enterText(0, "testtimetravel");
-		solo.clickOnButton("OK");
-		solo.clickOnMenuItem("Password");
-		solo.clearEditText(0);
-		solo.enterText(0, "!abcd1234");
-		solo.clickOnButton("OK");
+		solo.sendKey(Solo.ENTER);
 	}
 
 }
